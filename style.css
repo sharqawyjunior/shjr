@@ -127,7 +127,7 @@ height: 750px;
     
     width: 100%;
     height: 250px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.334), rgba(0, 0, 0, 0.534)) , url(https://st3.depositphotos.com/9527076/12784/i/950/depositphotos_127843960-stock-photo-fitness-or-bodybuilding-background-old.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.334), rgba(0, 0, 0, 0.534)) , url(https://st3.depositphotos.com/9527076/12784/i/950/depositphotos_127843960-stock-photo-fitness-or-building-background-old.jpg);
    
     background-size: cover;
 }
@@ -163,4 +163,8 @@ transition: all .4s;
     background-color: rgba(128, 128, 128, 0.171);
     padding-top: 50px;
     padding-bottom: 50px;
+}
+body {
+overflow-x: hidden;
+    
 }
