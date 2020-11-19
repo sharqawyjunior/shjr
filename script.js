@@ -7,7 +7,7 @@ $(window).scroll(function() {
       
     } else {
       document.querySelector(".navbar").style.opacity = "0";
-        document.querySelector(".navbar").style.display = "none";
+      document.querySelector(".navbar").style.display = "none";
     }
   });
   $('.nav-link, .btn-ghost').click(function() {
