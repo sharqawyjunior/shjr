@@ -4,11 +4,11 @@ $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll >=  150 ) {
       document.querySelector(".navbar").style.opacity = "1";
-           document.querySelector(".navbar").style.display = "block";
+    
       
     } else {
       document.querySelector(".navbar").style.opacity = "0";
-      document.querySelector(".navbar").style.display = "none";
+
     }
   });
   $('.nav-link, .btn-ghost').click(function() {
