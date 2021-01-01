@@ -94,3 +94,28 @@
        
     }
 }
+@media (min-width: 0px) and (max-width: 992px) {
+    #h1-carousel {
+      display: none;
+    }
+    #h2-carousel {
+        display: none;
+    }
+    #h11-carousel {
+        display: none;
+    }
+    #h22-carousel {
+        display: none;
+    }
+    #h111-carousel {
+        display: none;
+    }
+    #h222-carousel {
+        display: none;
+    }
+}
+@media (min-width: 250px) and (max-width: 600px) {
+    #img-about {
+        min-width: 200px;
+    }
+}
