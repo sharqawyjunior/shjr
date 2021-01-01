@@ -1,5 +1,11 @@
 
+ $(window).on('load', function () {
+  $(".loader").fadeIn();
+  $("#loader-text").delay(2000).fadeIn();
+  $("#preloder").delay(3500).fadeOut();
 
+
+});
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll >=  150 ) {
