@@ -58,7 +58,7 @@ $(window).scroll(function() {
       })
       $(window).scroll(function() {
         var scroll  = $(window).scrollTop();
-        if (scroll >= 1901 && scroll <= 2700) {
+        if (scroll >= 1901 && scroll <= 3000) {
             $("#features1").parent().addClass("actives")
         } 
        else {
@@ -68,7 +68,7 @@ $(window).scroll(function() {
       })
       $(window).scroll(function() {
         var scroll  = $(window).scrollTop();
-        if (scroll >= 2701 ) {
+        if (scroll >= 3001 ) {
             $("#contact1").parent().addClass("actives")
         } 
        else {
