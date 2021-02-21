@@ -49,11 +49,20 @@ $(window).scroll(function() {
     })
     $(window).scroll(function() {
         var scroll  = $(window).scrollTop();
-        if (scroll >= 601 && scroll <= 1900) {
+        if (scroll >= 601 && scroll <= 1300) {
             $("#about1").parent().addClass("actives")
         } 
        else {
           $("#about1").parent().removeClass("actives")
+       }
+      }) 
+      $(window).scroll(function() {
+        var scroll  = $(window).scrollTop();
+        if (scroll >= 1301 && scroll <= 1900) {
+            $("#success1").parent().addClass("actives")
+        } 
+       else {
+          $("#success1").parent().removeClass("actives")
        }
       })
       $(window).scroll(function() {
