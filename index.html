@@ -477,6 +477,370 @@
 color: #0d6efd;
 background-color: white;
     }
+  .home {
+    background-image: linear-gradient(to top, white, rgba(255, 255, 255, 0)), url(https://images.hdqwalls.com/wallpapers/white-cube-pattern-4k-bu.jpg);
+background-size: cover;
+background-position: center center;
+}
+@media (max-width: 767.98px) {
+#text {
+    margin-top: -50%;
+}
+}
+@media (min-width: 1400px)  {
+    .card_detail {
+    max-height: 550px;
+    min-height: 550px;
+    
+}
+.offer {
+    position: absolute;
+    height: 100px;
+transform: translateY(-50px) translateX(-40px);
+}
+}
+@media (min-width: 1200px) and (max-width: 1399.98px)  {
+    .card_detail {
+    max-height: 650px;
+    min-height: 650px;
+    
+}
+.card-img-top {
+    max-height: 370px;
+    min-height: 370px;
+   width: auto;
+}
+.offer {
+    position: absolute;
+    height: 100px;
+transform: translateY(-50px) translateX(-40px);
+}
+}
+@media (min-width: 768px) and (max-width: 1199.98px)  {
+    .card_detail  {
+    max-height: 650px;
+    min-height: 650px;
+    margin-top: 20px;
+    
+}
+.card-img-top {
+    max-height: 270px;
+    min-height: 270px;
+   
+}
+
+.offer {
+    position: absolute;
+    height: 100px;
+transform: translateY(-50px) translateX(-40px);
+}
+}
+@media (min-width: 575.98px) and (max-width: 767px)  {
+    .card-img-top {
+     
+       
+    }
+    .card_detail  {
+       
+        margin-top: 20px;
+        
+    }
+.offer {
+    position: absolute;
+    height: 100px;
+transform: translateY(-50px) translateX(-40px);
+}
+}
+@media (max-width:575.98px) {
+    .card_detail  {
+       
+        margin-top: 20px;
+        
+    }
+    .card2 {
+        width: 90vw;
+    }
+    .offer {
+        position: absolute;
+        height: 100px;
+    transform: translateY(-50px) translateX(-40px);
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .offer {
+        position: absolute;
+        height: 100px;
+    transform: translateY(-50px) translateX(-40px);
+    }
+    .card_detail {
+        max-height: 750px;
+        min-height: 750px;
+}}
+  
+
+@media (min-width: 991.98px) {
+    #card_img {
+        max-width: 370px;
+    }
+}
+#box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 2.5rem;
+  }
+  .gradient-border {
+    
+    --borderWidth: 5px;
+   color: black;
+    position: relative;
+    border-radius: var(--borderWidth);
+    transition: all .1s;
+  }
+  .gradient-border:hover {
+  
+  transition: all .1s;
+  }
+  .gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    -webkit-animation: animatedgradient 3s ease alternate infinite;
+            animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+  
+  
+  @-webkit-keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  
+  @keyframes circlename {
+      0% {
+      position: relative;
+      top: 0%;
+          border: 100%;
+          background-color: gold;
+      }
+      50% {
+          width: 50%;
+          border-radius: 50%;
+          background-color: gold;
+      
+      }
+  }
+  @keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  .loader {
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+   
+    transform: translate(-50%, -50%);
+    animation: loader 4s  ;
+    -webkit-animation: loader 4s  ;
+  }
+  
+  @keyframes loader {
+    0% {
+        height: 2px;
+        width: 900px;
+          background-color: white;
+          border-left-color: transparent;
+        }
+        20% {
+            height: 2px;
+            width: 0px;
+         background-color: white;
+         
+        }
+        30% {
+            height: 90vh;
+            width: 2px;
+         background-color: white;
+    
+       
+        }
+        40% {
+            height: 1px;
+            width: 1px;
+         background-color: white;
+        }
+  }
+  @-webkit-keyframes loader {
+    0% {
+        height: 2px;
+        width: 900px;
+          background-color: white;
+          border-left-color: transparent;
+        }
+        20% {
+            height: 2px;
+            width: 0px;
+         background-color: white;
+         
+        }
+        30% {
+            height: 90vh;
+            width: 2px;
+         background-color: white;
+    
+       
+        }
+        40% {
+            height: 1px;
+            width: 1px;
+         background-color: white;
+        }
+  }
+  .loader1 {
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+   
+    transform: translate(-50%, -50%);
+    animation: loader1 1s  ;
+    -webkit-animation: loader1 1s  ;
+  }
+  
+  @keyframes loader1 {
+    0% {
+    height: 2px;
+    width: 2px;
+      background-color: white;
+      border-left-color: transparent;
+    }
+    50% {
+        height: 2px;
+        width: 90vw;
+     background-color: white;
+     
+    }
+    60% {
+        height: 100px;
+        width: 2000px;
+     background-color: white;
+
+   
+    }
+  }
+  @-webkit-keyframes loader1 {
+    0% {
+    height: 2px;
+    width: 2px;
+      background-color: white;
+      border-left-color: transparent;
+    }
+    50% {
+        height: 90vh;
+        width: 2px;
+     background-color: white;
+     
+    }
+    60% {
+        height: 100px;
+        width: 2000px;
+     background-color: white;
+
+   
+    }
+  }
+html {
+    scroll-behavior: smooth;
+}
+.text__small {
+    font-weight: 400;
+  }
+  #preloder {
+position: fixed;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+z-index: 999999;
+background: #000;
+}
+
+#loader-text {
+font-weight: 400;
+letter-spacing: 10px;
+position: absolute;
+top: 50%;
+left: 50%;
+color: white;
+
+transform: translate(-50%, -50%);
+animation: loader3 4s  ;
+-webkit-animation: loader3 4s  ;
+}
+#home1:hover {
+color: #16c0f0;
+}
+@keyframes loader3 {
+0% {
+opacity: 0;
+    }
+30% {
+opacity: 0;
+}
+35% {
+    opacity: 0;
+}
+
+    50% {
+      
+opacity: 1;
+   
+    }
+}
+@-webkit-keyframes loader3 {
+0% {
+    opacity: 0;
+         }
+     30% {
+ opacity: 0;
+     }
+     35% {
+         opacity: 0;
+     }
+     
+         50% {
+           
+  opacity: 1;
+        
+         }
+}
 </style>
    <!-- Optional JavaScript; choose one of the two! -->
 
