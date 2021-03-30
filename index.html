@@ -4,311 +4,511 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:image" content="IMG_9860.PNG" />
-    
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="responsive.css">
-<link rel="icon" href="IMG_9860.PNG" type="image/gif" sizes="24x24">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>SHJR</title>
   </head>
   <body>
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary d-none" id="modal2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade modal-dialog-centered  mt-5"  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title text-uppercase" id="exampleModalLabel">Hurry up!!</h5>
-        
-      </div>
-      <div class="modal-body">
-        SAVE UP TO 50% with the full pacakge 
-        (Nutrition🥗+Workout🏋️‍♂️)
-        800 L.E TO 400 L.E🎉🔥💪🏻 
-        
-        
-      </div>
-      
-      <div class="modal-footer">
-        <button class="btn btn-secondary" id="close__modal" data-bs-dismiss="modal">Close</button>
-        <button id="close_one" class="d-none" onclick="window.location.href='#sale'" data-bs-dismiss="modal"></button>
-
-        <a class="btn btn-ghost text-center ml-4 btn-modal" style="background-color: red; color: white;"  id="btn-modal"  href="#sale">Read more</a>
+    <button type="button" class="btn btn-primary d-none" id="modal2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Launch demo modal
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade modal-dialog-centered  mt-5"  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-uppercase" id="exampleModalLabel">Hurry up!!</h5>
+            
+          </div>
+          <div class="modal-body">
+            SAVE UP TO 50% with the full pacakge 
+            (Nutrition + Workout)
+            800 L.E TO 400 L.E
+            
+            
+          </div>
+          
+          <div class="modal-footer">
+            <button class="btn btn-secondary" id="close__modal" data-bs-dismiss="modal">Close</button>
+            <button id="close_one" class="d-none" onclick="window.location.href='#packages'" data-bs-dismiss="modal"></button>
+    
+            <a class="btn btn-ghost text-center ml-4 btn-modal" style="background-color: red; color: white;"  id="btn-modal"  href="#sale">Read more</a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-    
     <div id="preloder">
       <div class="loader"></div>
      <h1 class="display-1 text-center" id="loader-text">SHJR</h1>
   </div> 
-    <nav class="navbar navbar-expand-lg navbar-dark " style="position: fixed; width: 100%; background-color: rgb(0, 0, 0); z-index: 3000;">
+    <nav class="navbar navbar-expand-lg navbar-light position-relative w-100 bg-white shadow-lg font-monospace">
         <div class="container-fluid">
-          <a class="navbar-brand ml-3" href="#home" style="color: white; font-size: 20px;">SHJR</a>
+          <a class="navbar-brand" href="#">SHJR</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item ml-3">
-                <a class="nav-link " style="color: white;" id="home1" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link ml-3 mr-3" href="#about" id="about1" style="color: white;">About Us</a>
-              </li>
-               <li class="nav-item">
-                <a class="nav-link ml-3 mr-3" href="#success" id="success1" style="color: white;">Success stroies</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link ml-3 mr-3" href="#features" id="features1" style="color: white;">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link ml-3 mr-3" href="#contact" id="contact1" style="color: white;">Contact</a>
+              <li class="nav-item ">
+                <a class="nav-link active me-3 link" aria-current="page" href="#home">Home</a>
               </li>
               
+             
+              <li class="nav-item">
+                <a class="nav-link me-3 active" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-3 active" href="#success_stories">Success strories</a>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-3 active" href="#packages">Packages</a>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-3 active" href="#contact">Contact Us</a>
+              </li>
+              
+             
             </ul>
-         
+           
           </div>
         </div>
       </nav>
-   
-      <!-- Beginning of home section   -->
-  <section class="header text-center" id="home">
-      <div class="container  pt-5">
-          <div class="row">
-              <div class="col-md-6 text-center">
- <img src="IMG_9860.PNG" class="img-fluid animated" id="logo">
-              </div>
-              <div class="col-md-6 text-center" id="col-header-description">
-<h1 id="h1-header">SHARQAWY JUNIOR</h1>
-<h2 id="h2-header">Escape The Ordinary</h2>
-<a class="btn btn-ghost text-center ml-4"  id="btn-header" role="button" href="#about">LEARN MORE...</a>
-              </div>
-          </div>
-      </div>
-  </section>
-<div class="line"></div>
- <!-- End of home section   -->
-
-
-  <!-- Beginning of about section   -->
-<section class="about pt-5" id="about">
+     
+<section class="home" id="home">
     <div class="container">
-        <Div class="row">
-            <div class="col-md-8">
-                <h1 class="mb-3 mt-5">About Us</h1><div id="line-small" class="ml-1"></div>
-                <p class="mt-3">My Name is Ahmed Sharqawy "SHJR", An experienced Athelte, World Champion, pharmacist, nutritionist & fitness trainer</p>
-            </div>
-        </Div>
-        <div class="container">
-            <Div class="row">
-                <Div class="col">
-                    <img class="img-fluid col-md-7 mt-5" id="img-about" src="img3.JPG">
-                </Div>
-                <Div class="col mt-5">
-<h1>Our Aim</h1><div id="line-small" class="ml-1 mb-5"></div>
-<p class="mb-5">We aim to take anyone who will join us to a better lifestyle, our goal is to make everyone achieve his goal whatever it is we are here to change you to a better version of you. We will help you to go on a 100% customized nutrition and training program </p>
-    </Div>
-            </Div>
+     
+        <div class="row align-items-center text-center justify-content-center" style="height: 750px;">
+          <div class="col-lg-6 col-md-6 d-md-none d-block">
+            <img src="12.png" style="max-height: 200px; " class="img-fluid rounded" alt="">
         </div>
-    </div>
-</section>
-
- <!-- End of about section   -->
-<div class="line"></div>
-
-<!-- Beginning of Carousel section -->
-<section class="slideshow" id="success" >
-  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="43.jpg" class="d-block carousel_img w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="12.jpg" class="d-block w-100 carousel_img"  alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="11.JPG" class="d-block w-100 carousel_img"  alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="10.jpg" class="d-block w-100 carousel_img" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="13.jpg" class="d-block w-100 carousel_img" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="16.jpg" class="d-block w-100 carousel_img" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="17.jpg" class="d-block w-100 carousel_img" alt="...">
-      </div>
+            <div class="col-lg-6 col-md-6" id="text">
+ <h1 class="display-4 fw-bolder font-monospace text-center">
+   Sharqawy Junior </h1>
+   <p class="lead text-lg-center" style="font-weight: 400; color: rgb(71, 68, 68);">Escape The Ordinary</p>
+    <p class="lead">
       
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</section>
-<div class="line"></div>
-  <!-- End of Carousel Section -->
-  <!-- Beginnig of Features section -->
-  <section class="features pt-5"  id="features">
-<Div class="container pt-5" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
-    <div class="row">
+      Welcome to SHJR family! let's start our journey together &rarr; 
+    </p>   
+    <div class="text-center">
+
  
-      <div class="col mr-5    ">
-        <h2 class="mb-3" id="text-features" >
-        <span style="color: brown; border-bottom: 2px solid brown ">-Nutrition program: (300LE) </span>  <br> <span class="text__small"> We provide you 2 nutrition plans per month each one duration is 14 days with a free day between them, each nutrition plan contain 3 different choices for each meal of your program with very flexible and amazing variety between food. </span><br><br> <span style="color: brown; border-bottom: 2px solid brown " > -Workout program: (500LE) </span><br> <span class="text__small"> We provide you 100% customized Training program all over the month according to your goal either gym or home workout</span>
-        <br><br>
-        <div id="sale">
-        <span style="color: brown; border-bottom: 2px solid brown "> -full Pacakge (N&W):
-        <br> <del>800 L.E </del> to 400 L.E  (50% off)  </span><br>
-        <p class="text__small">
-        Pacakge include:
-        
-        🔹2 different nutrition plans 100% customized, each contains 3 different plans but equal in calories for variation
-       <br> 🔹Workout plan (Home/gym workout): 
-         -Hypertrophy
-         -Strength 
-         -Weight loss / Weight gain 
-         -performance training 
-        <br>🔹Felixibilty/Mobility routine
-      <br>  🔹Supplement guide (If Needed)
-       <br> 🔹24/7 customer service for any questions & inquries ?</p>
-      </div> 
-        </h2>
-      
-                </div>
-        <Div class="col">
-            <img src="img5.jpg" class="img-fluid img-features " id="img-about">
-                    </Div>
+    <a href="#about" class="btn pe-4 ps-4 pt-1 pb-1 text-capitalize me-3 text-white" style="background-color: rgb(95, 95, 95);">Get started</a>    
+   </div>
     </div>
-</Div>
-</section>
-<div class="line"></div>
-<!-- End of features section -->
-<!-- Beginning of Contact Section -->
-<!--
-<section class="contant pt-5 pb-5" id="contact">
-    <div class="container mt-5">
-        <div class="row">
-       
-            <div class="col">
-                <img src="https://www.backgroundscool.com/wp-content/uploads/2019/03/bodybuilding_bodybuilder_muscle_rod_113419_938x1668.jpg" class="img-fluid img-features  ">
+            <div class="col-lg-6 col-md-6 d-none d-md-block">
+                <img src="12.png" style="transform: scale(0.9);" class="img-fluid rounded" alt="">
             </div>
-            <div class="col mr-5 pr-5" id="contact-form">
-                <form method="POST">
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="yossefaymanzedan@gmail.com" >
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                      </div>
-                      <div class="mb-3">
-                        <label for="name" class="form-label">Your Full Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Yossef Ayman Zedan">
-                       
-                      </div>
-                      
-                      <select class="form-select mb-3" aria-label="Default select example">
-                        <option selected>-- Choose A Plan --</option>
-                        <option value="1">Nutrition Plan</option>
-                        <option value="2">Fitness Plan</option>
-                        <option value="3">Gym Plan</option>
-                      </select>
-                      <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Type your message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
-                </form>
-                            </div>
         </div>
     </div>
 </section>
-<div class="line"></div> -->
-<section class="contact pt-5 pb-5" id="contact">
-  <Div class="container">
-    <Div class="row">
-      <Div class="col text-center" id="contact2"><h2>If you want to join us.. Send an email with
-        <br>
-      <ul class="list-unstyled">
-        <li>Full Name</li>
-        <li>Chosen Package</li>
-        <li>Whatsapp Number to: </li>
-
-      </ul> </h2><h1><a href="mailto:sharqawyjunior@gmail.com " class="btn btn-ghost" id="btn-header" >sharqawyjunior @gmail.com</a></h1></Div>
-    </Div>
-  </Div>
-</section>
-<!-- End of Contact Section -->
-<!-- Beginning of Counter section -->
-<section class="counter-section">
-  <div class="container">
-      <Div class="row">
-          <div class="col-sm text-center align-items-center">
-            <svg aria-hidden="true" width="50" class="mt-5" focusable="false" data-prefix="fab" data-icon="nutritionix" class="svg-inline--fa fab fa-nutritionix fa-w-13" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 512"><path fill="currentColor" d="M88 8.1S221.4-.1 209 112.5c0 0 19.1-74.9 103-40.6 0 0-17.7 74-88 56 0 0 14.6-54.6 66.1-56.6 0 0-39.9-10.3-82.1 48.8 0 0-19.8-94.5-93.6-99.7 0 0 75.2 19.4 77.6 107.5 0 .1-106.4 7-104-119.8zm312 315.6c0 48.5-9.7 95.3-32 132.3-42.2 30.9-105 48-168 48-62.9 0-125.8-17.1-168-48C9.7 419 0 372.2 0 323.7 0 275.3 17.7 229 40 192c42.2-30.9 97.1-48.6 160-48.6 63 0 117.8 17.6 160 48.6 22.3 37 40 83.3 40 131.7zM120 428c0-15.5-12.5-28-28-28s-28 12.5-28 28 12.5 28 28 28 28-12.5 28-28zm0-66.2c0-15.5-12.5-28-28-28s-28 12.5-28 28 12.5 28 28 28 28-12.5 28-28zm0-66.2c0-15.5-12.5-28-28-28s-28 12.5-28 28 12.5 28 28 28 28-12.5 28-28zM192 428c0-15.5-12.5-28-28-28s-28 12.5-28 28 12.5 28 28 28 28-12.5 28-28zm0-66.2c0-15.5-12.5-28-28-28s-28 12.5-28 28 12.5 28 28 28 28-12.5 28-28zm0-66.2c0-15.5-12.5-28-28-28s-28 12.5-28 28 12.5 28 28 28 28-12.5 28-28zM264 428c0-15.5-12.5-28-28-28s-28 12.5-28 28 12.5 28 28 28 28-12.5 28-28zm0-66.2c0-15.5-12.5-28-28-28s-28 12.5-28 28 12.5 28 28 28 28-12.5 28-28zm0-66.2c0-15.5-12.5-28-28-28s-28 12.5-28 28 12.5 28 28 28 28-12.5 28-28zM336 428c0-15.5-12.5-28-28-28s-28 12.5-28 28 12.5 28 28 28 28-12.5 28-28zm0-66.2c0-15.5-12.5-28-28-28s-28 12.5-28 28 12.5 28 28 28 28-12.5 28-28zm0-66.2c0-15.5-12.5-28-28-28s-28 12.5-28 28 12.5 28 28 28 28-12.5 28-28zm24-39.6c-4.8-22.3-7.4-36.9-16-56-38.8-19.9-90.5-32-144-32S94.8 180.1 56 200c-8.8 19.5-11.2 33.9-16 56 42.2-7.9 98.7-14.8 160-14.8s117.8 6.9 160 14.8z"></path></svg>
+<section class="about mt-5 pt-3" id="about">
+<div class="container">
+  <div class="row">
+    <div class="col text-center">
+      <h1 class="display-6 fw-bold">
+          About Us
+      </h1>
+      </div>
+  </div>
+  
+    <div class="row mt-5 mb-5 justify-content-evenly">
+    <div class="col-lg-4 " >
+      <div class="card bg-light h-100 gradient-border shadow-lg " id="about_cardd">
+      
+        <div class="card-body">
+          <div class="row pt-5 pb-5 text-center d-flex align-items-center justify-content-center" id="card_About" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-person-fill mb-4" viewBox="0 0 16 16">
+              <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            </svg>
+            <div class="w-100"></div>
+            <h3 class="font-monospace mb-5">Who's Sharqawy ?</h3>
+            <p class="lead ">
+             I'm Ahmed Sharqawy, former world & arab champion and member in national swimming team. i started coaching to help people change their life. i took three certificates as a  personal trainer, Nutritionist and strength conditioning from ISSA.
+            </p>
+          </div> </div>
+      </div>
+      
+    </div>
+    <div class="col-lg-4" >
+      <div class="card mt-5 mt-lg-0 m bg-light shadow-lg  gradient-border ">
+      
+        <div class="card-body  bg-light ">
+          <div class="row pt-5 pb-5 text-center  align-center-center"  id="card_About">
+            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-journal-check mb-4" style="margin-bottom: 3.4rem;" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+              <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+              <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+            </svg>
+            <div class="w-100"></div>
+            <h3 class="font-monospace " >Our Aim</h3>
+            <p class="lead">
+            We are here to provide you everything that help you to change your life to a healthier life. <p class="fw-bolder" style="font-size: 20px;">As we give you: </p>
+            <ul class="text-center list-unstyled  " style="margin-top: -20px;">
+              <li>
+                Customized nutrition and training program based on your goal.
+              </li>
+              <li>
+                Best variety of nutrition.
+              </li>
+              <li>
+                Exercises followed with videos to show you the right technique in an easy way.
+              </li><li>
+                Mobility and flexibility routine
+              </li>
+              <li>
+                24/7 customer service.
+              </li>
+              <li>
+                positive energy & motivational vibes!!
+              </li>
+              
+            </ul>
+  
+            </p>
            
-            <br><Span class="counter" style="color: rgb(255, 255, 255);">100</Span>+<br><h1 style="color: white;">Nutriton plans given
+          </div> </div>
+      </div>
+      <div class="container-fluid">
+     
+      </div>
+    </div>
+    
+  
+  </div>
+ 
+</div>
+</section>
+<section class="themes bg-light pt-5 pb-5" id="success_stories">
+  <div class="container">
+      <div class="row">
+          <div class="col text-center">
+              <h1 class="display-5 fw-bolder font-monospace mb-2">
+                 Success stories
               </h1>
+              <div class="w-100 mt-4"></div>
+              <p class="lead text-muted mt-2">
+                We will show you some of our success stories!!
+              </p>
           </div>
-          <div class="col-sm text-center">
-            <svg aria-hidden="true" width="80"  style="margin-top: 50px;" focusable="false" data-prefix="fas" data-icon="dumbbell" class="svg-inline--fa fa-dumbbell fa-w-20 mt-5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M104 96H56c-13.3 0-24 10.7-24 24v104H8c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h24v104c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm528 128h-24V120c0-13.3-10.7-24-24-24h-48c-13.3 0-24 10.7-24 24v272c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V288h24c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zM456 32h-48c-13.3 0-24 10.7-24 24v168H256V56c0-13.3-10.7-24-24-24h-48c-13.3 0-24 10.7-24 24v400c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V288h128v168c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24z"></path></svg>
-            <br><Span class="counter" style="color: rgb(255, 255, 255);">83</Span>+<br><h1 style="color: white; ">Fitness plans given
+      </div>
+      
+          <div class="row mt-5">
+            
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+<div class="row mb-5">
+ 
+ 
+  
+  
+</div>
+<div class="row mb-5 justify-content-center">
+  <div class="col-lg-4 col-md-6 col-sm-12 col-12 ">
+      <div class="card border-0 bg-transparent text-center" >
+          <img src="i2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><strong>-4 Kg fat/month</strong></h5>
+            
+           
+          </div>
+        </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12 col-12 ">
+      <div class="card border-0 bg-transparent text-center" >
+          <img src="i4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><strong>+3 kg Muscles/Month </strong></h5>
+            
+           
+          </div>
+        </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12 col-12 ">
+      <div class="card border-0 bg-transparent text-center" >
+          <img src="i3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><strong>-40 kg fat/6 months </strong></h5>
+            
+           
+          </div>
+        </div>
+  </div>
+</div>
+                  </div>
+                 
+                      <div class="row mb-5 justify-content-center text-start">
+                          <div class="col-lg-4 col-md-6 col-sm-12 col-12  ">
+                              <div class="card border-0 bg-transparent text-center" >
+                                  <img src="i1.jpg" class="card-img-top" alt="..." id="card_img">
+                                  <div class="card-body">
+                                    <h5 class="card-title"><strong>-7 kg fat/Month</strong></h5>
+                                    
+                                    
+                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-lg-4 col-sm-12 col-md-6 col-12">
+                              <div class="card border-0 bg-transparent text-center" >
+                                  <img src="i6.jpg" class="card-img-top" alt="..." id="card_img">
+                                  <div class="card-body">
+                                    <h5 class="card-title"><strong>-3 kg fat, +2 kg Muscles/month</strong></h5>
+                                    
+                                    
+                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-lg-4 col-sm-12 col-md-6 col-12" id="card_img">
+                              <div class="card border-0 bg-transparent text-center" >
+                                  <img src="i7.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title"><strong>+1.5 kg muscles/month</strong></h5>
+                                    
+                                   
+                                  </div>
+                                </div>
+                          </div>
+                      </div>
+                  </div>
 
-              </h1>
-          </div>
-          
-      </Div>
+                </div>
+              </div>
+           
+      </div>
   </div>
 </section>
-
-<div class="line"></div>
-<!-- End of Counter Section -->
-<!-- Beginning of Footer -->
-<footer class="footer">
-    <div class="container-fluid" id="footer">
+<section class="develop mt-5 pt-3" id="packages">
+    <div class="container">
         <div class="row">
-            <div class="col text-center mt-3">
-               
-                <a href="https://www.instagram.com/sharqawyjr/?hl=en" target="_blank" id="a-footer"><i class="fab fa-instagram mr-5"></i></a>
-                <a href="https://www.youtube.com/channel/UCtO0UuDx4DesNV8aMblaudQ" target="_blank" id="a-footer"><i class="fab fa-youtube "></i></a>
-                <br>
-                <span id="footer-span" class="mb-5 mt-5"> Copyright 2020 : </span><a href="mailto: yossefaymanzedan@gmail.com" class="btn-a mb-5" style="font-weight: 700;" id="footer-span">Yossef Ayman Zedan</a>
-
+            <div class="col text-center">
+            <h1 class="display-6 fw-bold font-monospace">
+                Packages
+            </h1>
+            <div class="w-100 mb-4"></div>
+            <p class="lead text-muted">
+              We provide you 3 different 
+            packages you can choose the one that fits you.
+            </p>
             </div>
         </div>
-    </div>
-  
-</footer>
-    <!-- Optional JavaScript -->
-    <!-- Popper.js first, then Bootstrap JS -->
+        <div class="row mt-5 mb-5 align-items-center justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                <div class="card  text-dark mb-3 gradient-border shadow-lg card_detail"  >
+                
+                    <div class="card-body">
+                      <div class="text-center">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+                      
+                      <img src="https://static.thenounproject.com/png/2130454-200.png" class="img-fluid text-center" style="max-height: 60px;" alt="" srcset="">
+                      </div><h1 class="card-title display-6">Nutrition program:</h1>
+                      <p class="card-text lead" >
+                        We provide you 2 nutrition plans per month each one duration is 14 days with a free meal/day between them, each nutrition plan contain 3 different choices for each meal of your program with very flexible and amazing variety between food.We suggest supplements if required.We take care if you have any chronic disease or any vitamine diffency.
+
+
+                      </p>
+                    
+                      
+                     
+                    </div>
+                    <p class="lead  d-block w-100 fw-bolder text-center mt-auto align-self-center">
+                      <a href="mailto: sharqawyjunior@gmail.com" class="btn justify-content-center btn-dark btn-lg">$20</a>
+                    </p> 
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card d-flex align-self-center text-dark mb-3 gradient-border shadow-lg card_detail" id="card_detail">
+              
+                  <div class="card-body h-100" id="card_detail">
+                    <div class="text-center">
+
+                      
+                      <img src="https://image.flaticon.com/icons/png/512/38/38464.png" class="img-fluid text-center" style="max-height: 55px;" alt="" srcset="">
+                      </div>
+             <h1 class="card-title display-6">Workout program:</h1>
+                    <p class="card-text lead" >
+                      We provide you 100% customized Training program all over the month according to your goal either gym or home workout. Each exercise is followed with a video to show you an easy and proper technique. Also we provide you flexibilty and mobility routines with your workout. We suggest supplements if required.
+                    </p>
+                  
+                    <div class="text-center justify-content-center" style="position: relative; left: 50%;  transform: translateX(-50%);">
+                    
+                  </div></div>
+                  <p class="lead  d-block w-100 fw-bolder text-center mt-auto align-self-center">
+                    <a href="mailto: sharqawyjunior@gmail.com" class="btn justify-content-center btn-dark btn-lg">$32</a>
+                  </p> 
+                </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="card d-flex align-self-center text-dark mb-3 gradient-border shadow-lg card_detail" id="card_detail">
+            
+                <div class="card-body h-100" id="card_detail">
+                  <img src="https://pics.freeicons.io/uploads/icons/png/14038073941582872993-512.png" height="100" class="img-fluid offer" alt="" srcset="">
+                  <div class="text-center">
+
+                    
+                    <img src="https://static.thenounproject.com/png/499479-200.png" class="img-fluid text-center" style="max-height: 70px;" alt="" srcset="">
+                    </div>
+           <h1 class="card-title display-6">Full Pacakge: (N+W)</h1>
+                  <p class="card-text lead" >
+                    - 2 different nutrition plans 100% customized, each contains 3 different plans but equal in calories for variation
+                   <br> - Workout plan (Home/gym workout): <span class="" style="font-weight: 500;">(Hypertrophy -Strength -Weight loss / Weight gain -performance training)</span> 
+                  <br>  - Felixibilty/Mobility routine
+                   <br> - Supplement guide (If required)
+                   br - 24/7 customer service for any questions & inquries.                  </p>
+                
+                  
+                    </div>
+                  <p class="lead  d-block w-100 fw-bolder text-center mt-auto align-self-center">
+                    <a href="mailto: sharqawyjunior@gmail.com" class="btn justify-content-center btn-dark btn-lg disabled"><span style='color:red;text-decoration:line-through' > <span style="color: white;">$52 </span></span> </a>
+                    <a href="mailto: sharqawyjunior@gmail.com" class="btn justify-content-center btn-dark btn-lg">$26 </a>
+
+                  </p> 
+              </div>
+        </div>
+        </div>
    
-    <script>
-     (function(e){"use strict";e.fn.counterUp=function(t){var n=e.extend({time:400,delay:10},t);return this.each(function(){var t=e(this),r=n,i=function(){var e=[],n=r.time/r.delay,i=t.text(),s=/[0-9]+,[0-9]+/.test(i);i=i.replace(/,/g,"");var o=/^[0-9]+$/.test(i),u=/^[0-9]+\.[0-9]+$/.test(i),a=u?(i.split(".")[1]||[]).length:0;for(var f=n;f>=1;f--){var l=parseInt(i/n*f);u&&(l=parseFloat(i/n*f).toFixed(a));if(s)while(/(\d+)(\d{3})/.test(l.toString()))l=l.toString().replace(/(\d+)(\d{3})/,"$1,$2");e.unshift(l)}t.data("counterup-nums",e);t.text("0");var c=function(){t.text(t.data("counterup-nums").shift());if(t.data("counterup-nums").length)setTimeout(t.data("counterup-func"),r.delay);else{delete t.data("counterup-nums");t.data("counterup-nums",null);t.data("counterup-func",null)}};t.data("counterup-func",c);setTimeout(t.data("counterup-func"),r.delay)};t.waypoint(i,{offset:"100%",triggerOnce:!0})})}})(jQuery);
-      !function(){"use strict";function t(o){if(!o)throw new Error("No options passed to Waypoint constructor");if(!o.element)throw new Error("No element option passed to Waypoint constructor");if(!o.handler)throw new Error("No handler option passed to Waypoint constructor");this.key="waypoint-"+e,this.options=t.Adapter.extend({},t.defaults,o),this.element=this.options.element,this.adapter=new t.Adapter(this.element),this.callback=o.handler,this.axis=this.options.horizontal?"horizontal":"vertical",this.enabled=this.options.enabled,this.triggerPoint=null,this.group=t.Group.findOrCreate({name:this.options.group,axis:this.axis}),this.context=t.Context.findOrCreateByElement(this.options.context),t.offsetAliases[this.options.offset]&&(this.options.offset=t.offsetAliases[this.options.offset]),this.group.add(this),this.context.add(this),i[this.key]=this,e+=1}var e=0,i={};t.prototype.queueTrigger=function(t){this.group.queueTrigger(this,t)},t.prototype.trigger=function(t){this.enabled&&this.callback&&this.callback.apply(this,t)},t.prototype.destroy=function(){this.context.remove(this),this.group.remove(this),delete i[this.key]},t.prototype.disable=function(){return this.enabled=!1,this},t.prototype.enable=function(){return this.context.refresh(),this.enabled=!0,this},t.prototype.next=function(){return this.group.next(this)},t.prototype.previous=function(){return this.group.previous(this)},t.invokeAll=function(t){var e=[];for(var o in i)e.push(i[o]);for(var n=0,r=e.length;r>n;n++)e[n][t]()},t.destroyAll=function(){t.invokeAll("destroy")},t.disableAll=function(){t.invokeAll("disable")},t.enableAll=function(){t.Context.refreshAll();for(var e in i)i[e].enabled=!0;return this},t.refreshAll=function(){t.Context.refreshAll()},t.viewportHeight=function(){return window.innerHeight||document.documentElement.clientHeight},t.viewportWidth=function(){return document.documentElement.clientWidth},t.adapters=[],t.defaults={context:window,continuous:!0,enabled:!0,group:"default",horizontal:!1,offset:0},t.offsetAliases={"bottom-in-view":function(){return this.context.innerHeight()-this.adapter.outerHeight()},"right-in-view":function(){return this.context.innerWidth()-this.adapter.outerWidth()}},window.Waypoint=t}(),function(){"use strict";function t(t){window.setTimeout(t,1e3/60)}function e(t){this.element=t,this.Adapter=n.Adapter,this.adapter=new this.Adapter(t),this.key="waypoint-context-"+i,this.didScroll=!1,this.didResize=!1,this.oldScroll={x:this.adapter.scrollLeft(),y:this.adapter.scrollTop()},this.waypoints={vertical:{},horizontal:{}},t.waypointContextKey=this.key,o[t.waypointContextKey]=this,i+=1,n.windowContext||(n.windowContext=!0,n.windowContext=new e(window)),this.createThrottledScrollHandler(),this.createThrottledResizeHandler()}var i=0,o={},n=window.Waypoint,r=window.onload;e.prototype.add=function(t){var e=t.options.horizontal?"horizontal":"vertical";this.waypoints[e][t.key]=t,this.refresh()},e.prototype.checkEmpty=function(){var t=this.Adapter.isEmptyObject(this.waypoints.horizontal),e=this.Adapter.isEmptyObject(this.waypoints.vertical),i=this.element==this.element.window;t&&e&&!i&&(this.adapter.off(".waypoints"),delete o[this.key])},e.prototype.createThrottledResizeHandler=function(){function t(){e.handleResize(),e.didResize=!1}var e=this;this.adapter.on("resize.waypoints",function(){e.didResize||(e.didResize=!0,n.requestAnimationFrame(t))})},e.prototype.createThrottledScrollHandler=function(){function t(){e.handleScroll(),e.didScroll=!1}var e=this;this.adapter.on("scroll.waypoints",function(){(!e.didScroll||n.isTouch)&&(e.didScroll=!0,n.requestAnimationFrame(t))})},e.prototype.handleResize=function(){n.Context.refreshAll()},e.prototype.handleScroll=function(){var t={},e={horizontal:{newScroll:this.adapter.scrollLeft(),oldScroll:this.oldScroll.x,forward:"right",backward:"left"},vertical:{newScroll:this.adapter.scrollTop(),oldScroll:this.oldScroll.y,forward:"down",backward:"up"}};for(var i in e){var o=e[i],n=o.newScroll>o.oldScroll,r=n?o.forward:o.backward;for(var s in this.waypoints[i]){var a=this.waypoints[i][s];if(null!==a.triggerPoint){var l=o.oldScroll<a.triggerPoint,h=o.newScroll>=a.triggerPoint,p=l&&h,u=!l&&!h;(p||u)&&(a.queueTrigger(r),t[a.group.id]=a.group)}}}for(var c in t)t[c].flushTriggers();this.oldScroll={x:e.horizontal.newScroll,y:e.vertical.newScroll}},e.prototype.innerHeight=function(){return this.element==this.element.window?n.viewportHeight():this.adapter.innerHeight()},e.prototype.remove=function(t){delete this.waypoints[t.axis][t.key],this.checkEmpty()},e.prototype.innerWidth=function(){return this.element==this.element.window?n.viewportWidth():this.adapter.innerWidth()},e.prototype.destroy=function(){var t=[];for(var e in this.waypoints)for(var i in this.waypoints[e])t.push(this.waypoints[e][i]);for(var o=0,n=t.length;n>o;o++)t[o].destroy()},e.prototype.refresh=function(){var t,e=this.element==this.element.window,i=e?void 0:this.adapter.offset(),o={};this.handleScroll(),t={horizontal:{contextOffset:e?0:i.left,contextScroll:e?0:this.oldScroll.x,contextDimension:this.innerWidth(),oldScroll:this.oldScroll.x,forward:"right",backward:"left",offsetProp:"left"},vertical:{contextOffset:e?0:i.top,contextScroll:e?0:this.oldScroll.y,contextDimension:this.innerHeight(),oldScroll:this.oldScroll.y,forward:"down",backward:"up",offsetProp:"top"}};for(var r in t){var s=t[r];for(var a in this.waypoints[r]){var l,h,p,u,c,d=this.waypoints[r][a],f=d.options.offset,w=d.triggerPoint,y=0,g=null==w;d.element!==d.element.window&&(y=d.adapter.offset()[s.offsetProp]),"function"==typeof f?f=f.apply(d):"string"==typeof f&&(f=parseFloat(f),d.options.offset.indexOf("%")>-1&&(f=Math.ceil(s.contextDimension*f/100))),l=s.contextScroll-s.contextOffset,d.triggerPoint=Math.floor(y+l-f),h=w<s.oldScroll,p=d.triggerPoint>=s.oldScroll,u=h&&p,c=!h&&!p,!g&&u?(d.queueTrigger(s.backward),o[d.group.id]=d.group):!g&&c?(d.queueTrigger(s.forward),o[d.group.id]=d.group):g&&s.oldScroll>=d.triggerPoint&&(d.queueTrigger(s.forward),o[d.group.id]=d.group)}}return n.requestAnimationFrame(function(){for(var t in o)o[t].flushTriggers()}),this},e.findOrCreateByElement=function(t){return e.findByElement(t)||new e(t)},e.refreshAll=function(){for(var t in o)o[t].refresh()},e.findByElement=function(t){return o[t.waypointContextKey]},window.onload=function(){r&&r(),e.refreshAll()},n.requestAnimationFrame=function(e){var i=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||t;i.call(window,e)},n.Context=e}(),function(){"use strict";function t(t,e){return t.triggerPoint-e.triggerPoint}function e(t,e){return e.triggerPoint-t.triggerPoint}function i(t){this.name=t.name,this.axis=t.axis,this.id=this.name+"-"+this.axis,this.waypoints=[],this.clearTriggerQueues(),o[this.axis][this.name]=this}var o={vertical:{},horizontal:{}},n=window.Waypoint;i.prototype.add=function(t){this.waypoints.push(t)},i.prototype.clearTriggerQueues=function(){this.triggerQueues={up:[],down:[],left:[],right:[]}},i.prototype.flushTriggers=function(){for(var i in this.triggerQueues){var o=this.triggerQueues[i],n="up"===i||"left"===i;o.sort(n?e:t);for(var r=0,s=o.length;s>r;r+=1){var a=o[r];(a.options.continuous||r===o.length-1)&&a.trigger([i])}}this.clearTriggerQueues()},i.prototype.next=function(e){this.waypoints.sort(t);var i=n.Adapter.inArray(e,this.waypoints),o=i===this.waypoints.length-1;return o?null:this.waypoints[i+1]},i.prototype.previous=function(e){this.waypoints.sort(t);var i=n.Adapter.inArray(e,this.waypoints);return i?this.waypoints[i-1]:null},i.prototype.queueTrigger=function(t,e){this.triggerQueues[e].push(t)},i.prototype.remove=function(t){var e=n.Adapter.inArray(t,this.waypoints);e>-1&&this.waypoints.splice(e,1)},i.prototype.first=function(){return this.waypoints[0]},i.prototype.last=function(){return this.waypoints[this.waypoints.length-1]},i.findOrCreate=function(t){return o[t.axis][t.name]||new i(t)},n.Group=i}(),function(){"use strict";function t(t){this.$element=e(t)}var e=window.jQuery,i=window.Waypoint;e.each(["innerHeight","innerWidth","off","offset","on","outerHeight","outerWidth","scrollLeft","scrollTop"],function(e,i){t.prototype[i]=function(){var t=Array.prototype.slice.call(arguments);return this.$element[i].apply(this.$element,t)}}),e.each(["extend","inArray","isEmptyObject"],function(i,o){t[o]=e[o]}),i.adapters.push({name:"jquery",Adapter:t}),i.Adapter=t}(),function(){"use strict";function t(t){return function(){var i=[],o=arguments[0];return t.isFunction(arguments[0])&&(o=t.extend({},arguments[1]),o.handler=arguments[0]),this.each(function(){var n=t.extend({},o,{element:this});"string"==typeof n.context&&(n.context=t(this).closest(n.context)[0]),i.push(new e(n))}),i}}var e=window.Waypoint;window.jQuery&&(window.jQuery.fn.waypoint=t(window.jQuery)),window.Zepto&&(window.Zepto.fn.waypoint=t(window.Zepto))}();
-      $(".counter").counterUp({
-          delay: 50,
-          time: 2300
-      })
+      </div>
+    </section>
+      <div class="contact  py-5" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+            <h1 class="display-6 fw-bold font-monospace">
+                Contact Us
+            </h1>
+            
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+ <div class="card card2 gradient-border pt-2 mt-5">
+   <div class="lead fs-3">
+
+ 
+          <div class="col text-center lead fs-3" id="contact2"><span>If you want to join us.. Send an email with
+            <br>
+          <ul class="list-unstyled">
+            <li>Full Name</li>
+            <li>Chosen Package</li>
+            <li>Whatsapp Number to: </li>
     
-     $(document).ready(function() {
+          </ul> </span><h1><a href="mailto:sharqawyjunior@gmail.com " class="btn bg-dark btn-lg shadow-lg btn-dark" id="btn-header">sharqawyjunior @gmail.com</a></h1></div>
+       </div> </div></div></div>
+    </div>
+<footer class="pt-4 mt-5 d-flex pb-4 p-4 bg-dark text-white">
+<div class="container-fluid">
+    <div class="row mb-5 justify-content-center">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <h1 class="display-6 fw-bolder">
+                Sharqawy Junior
+            </h1>
+            <ul class="list-unstyled">
+                
+                <li class="align-self-center">
+                  <a href="https://instagram.com/sharqawyjr?igshid=1m42bymfuqsnahttps://instagram.com/sharqawyjr?igshid=1m42bymfuqsna" class="img-fluid fs-5 link-light text-decoration-none" >
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/769px-Instagram-Icon.png" height="40px"  alt="" srcset=""> <span class="ms-3">@sharqawyjr</span> 
+                  </a>
+                </li>
+                <li class="align-self-center mt-2">
+                  <a href="https://youtube.com/channel/UCtO0UuDx4DesNV8aMblaudQ" class="img-fluid fs-5 link-light text-decoration-none" >
+                    <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/youtube-512.png" height="40px"  alt="" srcset=""> <span class="ms-3">Sharqawy Junior</span> 
+                  </a>
+                </li>
+                <li class="align-self-center mt-2">
+                  <a href="mailto: sharqawyjunior@gmail.com" class="img-fluid fs-5 link-light text-decoration-none" >
+                    <img src="    https://cdn4.iconfinder.com/data/icons/free-colorful-icons/360/gmail.png" height="40px"  alt="" srcset=""> <span class="ms-3">sharqawyjunior@gmail.com</span> 
+                  </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <h1 class="fs-5 fw-bolder">
+                Quick links
+            </h1>
+            <ul class="list-unstyled">
+                <li>
+                  <a href="#home" class="link-light text-decoration-none ">Home </a>
+                </li>
+                <li>
+                  <a href="#about" class="link-light text-decoration-none ">About Us </a>
+                </li> 
+                <li>
+                  <a href="#success_stories" class="link-light text-decoration-none ">Success stories </a>
+                </li>
+                <li>
+                  <a href="#packages" class="link-light text-decoration-none ">Packages </a>
+                </li>
+                <li>
+                  <a href="#contact" class="link-light text-decoration-none ">Contact Us </a>
+                </li>
+            </ul>
+        </div>
+       
+       
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col mb-3">
+           
+              
+            
+              
+             
+         
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+<p class="text-muted">&copy; Yossef Ayman Zedan 2021</p>
+
+        </div>
+    </div>
+</div>
+</footer>
+<style>
+    .list-group-item {
+        border: 0;
+    }
+    .list-group .active{
+        border: 0;
+color: #0d6efd;
+background-color: white;
+    }
+</style>
+   <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script>
+       $('.nav-link').click(function() {
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      && 
+      location.hostname == this.hostname
+    ) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 700 );
+        return false;
+      }
+    }
+    
+  }); 
+  $(window).on('load', function () {
+  $(".loader").fadeIn();
+  $("#loader-text").delay(2000).fadeIn();
+  $("#preloder").delay(3500).fadeOut();
+
+
+});
+$(document).ready(function() {
         $('#modal2').click();
        $('#btn-modal').click(function() {
         
@@ -317,452 +517,11 @@
        })
        
      })
-    </script>
-    <style>
-      .text__small {
-        font-weight: 400;
-      }
-      #preloder {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 999999;
-    background: #000;
-  }
-
-#loader-text {
-font-weight: 400;
-letter-spacing: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: white;
-   
-    transform: translate(-50%, -50%);
-    animation: loader3 4s  ;
-    -webkit-animation: loader3 4s  ;
-}
-#home1:hover {
-    color: #16c0f0;
-}
-@keyframes loader3 {
-    0% {
-   opacity: 0;
-        }
-    30% {
-opacity: 0;
-    }
-    35% {
-        opacity: 0;
-    }
-  
-        50% {
-          
- opacity: 1;
-       
-        }
-  }
-  @-webkit-keyframes loader3 {
-    0% {
-        opacity: 0;
-             }
-         30% {
-     opacity: 0;
-         }
-         35% {
-             opacity: 0;
-         }
-         
-             50% {
-               
-      opacity: 1;
-            
-             }
-  }
-  .slideshow {
-    background-image: url(https://1.bp.blogspot.com/-ew-OwCosX48/Xuoss_UDdPI/AAAAAAAAT6I/6bkTxtlC-L8wL-66-JYvHObWbGnKsHEFwCK4BGAsYHg/w640-h426/ultra-high-resolution-heroscreen.cc-wallpaper-5760x3840.png);
- 
-  }
-  .carousel_img {
-  max-height: 400px;
-  min-height: 400px;
-    
-    max-width: 400px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .loader {
-   
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    
-   
-    transform: translate(-50%, -50%);
-    animation: loader 4s  ;
-    -webkit-animation: loader 4s  ;
-  }
-  
-  @keyframes loader {
-    0% {
-        height: 2px;
-        width: 900px;
-          background-color: white;
-          border-left-color: transparent;
-        }
-        20% {
-            height: 2px;
-            width: 0px;
-         background-color: white;
-         
-        }
-        30% {
-            height: 90vh;
-            width: 2px;
-         background-color: white;
-    
-       
-        }
-        40% {
-            height: 1px;
-            width: 1px;
-         background-color: white;
-        }
-  }
-  @-webkit-keyframes loader {
-    0% {
-        height: 2px;
-        width: 900px;
-          background-color: white;
-          border-left-color: transparent;
-        }
-        20% {
-            height: 2px;
-            width: 0px;
-         background-color: white;
-         
-        }
-        30% {
-            height: 90vh;
-            width: 2px;
-         background-color: white;
-    
-       
-        }
-        40% {
-            height: 1px;
-            width: 1px;
-         background-color: white;
-        }
-  }
-  .loader1 {
-   
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    
-   
-    transform: translate(-50%, -50%);
-    animation: loader1 1s  ;
-    -webkit-animation: loader1 1s  ;
-  }
-  
-  @keyframes loader1 {
-    0% {
-    height: 2px;
-    width: 2px;
-      background-color: white;
-      border-left-color: transparent;
-    }
-    50% {
-        height: 2px;
-        width: 90vw;
-     background-color: white;
-     
-    }
-    60% {
-        height: 100px;
-        width: 2000px;
-     background-color: white;
-
-   
-    }
-  }
-  @-webkit-keyframes loader1 {
-    0% {
-    height: 2px;
-    width: 2px;
-      background-color: white;
-      border-left-color: transparent;
-    }
-    50% {
-        height: 90vh;
-        width: 2px;
-     background-color: white;
-     
-    }
-    60% {
-        height: 100px;
-        width: 2000px;
-     background-color: white;
-
-   
-    }
-  }
-html {
-    scroll-behavior: smooth;
-}
-#col-header-description {
-    margin-top: 18%;
-}
-.header {
-height: 850px;
-
-background-image: url(https://1.bp.blogspot.com/-ew-OwCosX48/Xuoss_UDdPI/AAAAAAAAT6I/6bkTxtlC-L8wL-66-JYvHObWbGnKsHEFwCK4BGAsYHg/w640-h426/ultra-high-resolution-heroscreen.cc-wallpaper-5760x3840.png);
-
-background-position: center center;
-
-}
-#logo {
-    margin-top: 20%;
-}
-#h1-header {
-   
-    margin-bottom: 1rem;
-}
-#h2-header {
-    color: rgb(131, 131, 131);
-    margin-bottom: 1rem;
-}
-#btn-header {
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin-right: 20px;
-    background-color: black;
-    color: white;
-/*
- clip-path: polygon(0 0, 30% 0, 30% 20%, 70% 20%, 70% 0, 100% 0, 100% 100%, 70% 100%, 70% 80%, 30% 80%, 30% 100%, 0 100%);
-*/
-    margin-top: 1rem;
-    font-size: 24px;
-    
-   
-}
-
-
-
-.modal {
-    display: none;
-}
-
-#btn-header:hover {
-  
- box-shadow: 0 4px 16px 1px black;
-
-}
-.line {
-    height: 5px;
-    background-color: rgb(131, 131, 131);
-}
-.about {
-    background-image: url(https://1.bp.blogspot.com/-ew-OwCosX48/Xuoss_UDdPI/AAAAAAAAT6I/6bkTxtlC-L8wL-66-JYvHObWbGnKsHEFwCK4BGAsYHg/w640-h426/ultra-high-resolution-heroscreen.cc-wallpaper-5760x3840.png);
-
-    background-position: center center; padding-top: 100px;
-    
-    
-    color: black;
-}
-#line-small {
-  
-    height: 5px;
-    background-color: rgb(131, 131, 131);
-    width: 80px;
-}
-#img-about {
-    border-radius: 15px;
-     border: 5px solid rgb(131, 131, 131);
-  
-    margin-bottom: 100px;
-}
-.img-craousel {
-    min-height: 700px;
-    max-height: 700px;
-}
-#h1-carousel {
-    position: absolute;
-    bottom: 300px;
-    left: 60px;
-    font-size: 105px;
-    color: black;
-}
-#h2-carousel {
-    position: absolute;
-    bottom: 150px;
-    left: 60px;
-    text-align: left;
-    font-size: 70px;
-    color: black;
-}
-#h11-carousel {
-    position: absolute;
-    bottom: 150px;
-    left: 60px;
-    font-size: 105px;
-    color: white;
-}
-#h22-carousel {
-    position: absolute;
-    bottom: 150px;
-    left: 60px;
-    text-align: left;
-    font-size: 70px;
-    color: white;
-}
-#h111-carousel {
-    position: absolute;
-    bottom: 300px;
-    left: 60px;
-    font-size: 105px;
-    color: rgb(255, 254, 254);
-}
-#h222-carousel {
-    position: absolute;
-    bottom: 150px;
-    left: 60px;
-    text-align: left;
-    font-size: 70px;
-    color: rgb(228, 215, 215);
-}
-.img-features {
-    max-height: 500px;
-   
-    border: 5px solid aqua;
-    border-radius:  10px;
-}
-#text-features {
-    font-style: italic;
-}
-.features {
- /*
-background-image: url(https://1.bp.blogspot.com/-ew-OwCosX48/Xuoss_UDdPI/AAAAAAAAT6I/6bkTxtlC-L8wL-66-JYvHObWbGnKsHEFwCK4BGAsYHg/w640-h426/ultra-high-resolution-heroscreen.cc-wallpaper-5760x3840.png);
-*/
-    color: black;
-    padding-bottom: 3rem;
-    background-image: url(https://1.bp.blogspot.com/-ew-OwCosX48/Xuoss_UDdPI/AAAAAAAAT6I/6bkTxtlC-L8wL-66-JYvHObWbGnKsHEFwCK4BGAsYHg/w640-h426/ultra-high-resolution-heroscreen.cc-wallpaper-5760x3840.png);
-
-    background-position: center center;
-}
-.contact {
-    background-image: url(https://1.bp.blogspot.com/-ew-OwCosX48/Xuoss_UDdPI/AAAAAAAAT6I/6bkTxtlC-L8wL-66-JYvHObWbGnKsHEFwCK4BGAsYHg/w640-h426/ultra-high-resolution-heroscreen.cc-wallpaper-5760x3840.png);
-
-    background-position: center center;
-     /*
-background-image: url(https://1.bp.blogspot.com/-ew-OwCosX48/Xuoss_UDdPI/AAAAAAAAT6I/6bkTxtlC-L8wL-66-JYvHObWbGnKsHEFwCK4BGAsYHg/w640-h426/ultra-high-resolution-heroscreen.cc-wallpaper-5760x3840.png);
-
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.534), black) , url(1.jpg);
-   */
-    color: black;
-}
-
-.carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' stroke='black'  viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-  border-radius: 2px;
-  height: 150px;
-  width: 110px;
-  background-color: white;
- 
-  
-}
-
-.carousel-control-prev-icon {
-    border-radius: 2px;
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' stroke='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-    height: 150px;
-    width: 110px;
-    background-color: white;
-}
-
-#fab {
-    margin-top: 35px;
-    font-size: 60px;
-    margin-bottom: 35px;
-    color: white;
-}
-.counter-section {
-    padding-bottom: 30px;
-    font-size: 50px;
-    background-image: linear-gradient(to left, black, rgba(255, 255, 255, 0)) ,url(https://trumpwallpapers.com/wp-content/uploads/Workout-Wallpaper-04-1900-x-1058.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
-}
-#a-footer {
-    color: white;
-    font-size: 50px;
-}
-.footer {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.534), black) , url(1.jpg);
-  
-    
-}
-#footer {
-    
-    width: 100%;
-    height: 250px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.334), rgba(0, 0, 0, 0.534)) , url(https://st3.depositphotos.com/9527076/12784/i/950/depositphotos_127843960-stock-photo-fitness-or-building-background-old.jpg);
-   
-    background-size: cover;
-}
-.fab  {
-    margin-top: 25px;
-    margin-bottom: 50px;
-}
-#footer-span {
-   
-    font-size: 30px;
-    color: white;
-   
-}
-#footer-span:hover {
-   
-    font-size: 30px;
-    color: white;
-    text-decoration: none;
-   
-}
-.btn-a {
-    color: aqua;
-}
-.edit1 {
-    margin-left: 120px;
-}
-.edit2 {
-    margin-left: 120px;
-}
-nav {
-    box-shadow: 0px 2px 2px 0px rgb(94, 94, 94);
-    font-size: 20px;
-transition: all .4s;
-    opacity: 0;
-}
-.actives {
-    border-bottom: 2px solid aqua;
-}
-#contact2 {
-    background-color: rgba(58, 58, 58, 0.171);
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-body {
-overflow-x: hidden;
-    
-}
-
-    </style>
-</body>
+   </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
