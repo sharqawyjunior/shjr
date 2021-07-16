@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navigation">
+
+        <input type="checkbox" id="navi-toggle" class="navigation__checkbox fixed-top" >
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">
+
+            </span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+
+                    <a href="#home" class="navigation__link" onclick="myFunction()"> <h1 class="display-4">Home  </h1></a>
+                </li>
+
+                <li class="navigation__item">
+
+                    <a href="#" class="navigation__link" onclick="myFunction()"> <h1 class="display-4">About Us</h1></a>
+                </li>
+                <li class="navigation__item">
+
+                    <a href="#" class="navigation__link" onclick="myFunction()"> <h1 class="display-4">Recipes</h1></a>
+                </li>
+                <li class="navigation__item">
+
+                    <a href="#" class="navigation__link" onclick="myFunction()"> <h1 class="display-4">Success stories   </h1></a>
+                </li>
+
+
+                <li class="navigation__item">
+
+                    <a href="#" class="navigation__link" onclick="myFunction()"> <h1 class="display-4">Packages  </h1></a>
+                </li>
+                <li class="navigation__item">
+
+                    <a href="#" class="navigation__link" onclick="myFunction()"> <h1 class="display-4">Contact Us  </h1></a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+<div class="container border-bottom border-3 border-dark">
+    <div class="row justify-content-center text-center">
+        <div class="col-md-4">
+
+            <br>
+            <h1 class="display-1 fw-bolder mb-2">
+                Q&A
+            </h1>
+        </div>
+    </div>
+
+
+</div>
+<div class="container my-5">
+<div class="row pb-5 mb-5">
+    <div class="col-md-12">
+        <h1>Nutrition questions?</h1>
+        <select class="form-select fw-bolder" aria-label="Default select example" id="select1">
+            <option value="1">Open this select menu</option>
+            <option value="2">Can i drink coffe, latte or cappuccino?</option>
+            <option value="3">What are the types of protein that are alternative to each other?</option>
+            <option value="4">What are the types of healthy fats?</option>
+            <option value="5">What are the types of food that help in treatment of iron deficiency?</option>
+            <option value="6">What is the most important thing to do for weight loss?</option>
+            <option value="7">How many macros do you need everyday?</option>
+          </select>
+          <p class="lead mt-3" id="ri">
+
+        </p>
+          <button onclick="nutrition()" class="btn btn-dark w-100 mt-3">Submit</button>
+    </div>
+
+
+
+</div>
+</div>
+    <script>
+        function myFunction() {
+  document.querySelector(".navigation__checkbox").click();
+}
+function nutrition() {
+
+
+if (document.getElementById('select1').value == "1") {
+    document.getElementById("ri").innerHTML = "Please select a question!";
+}
+else if (document.getElementById('select1').value == "2") {
+    document.getElementById("ri").innerHTML = "Yes, but switch full creamed milk with skimmed milk or almond milk. Also, switch white sugar with fructose or sweetner.";
+}
+else if (document.getElementById('select1').value == "3") {
+    document.getElementById("ri").innerHTML = "- Liver, chicken breasts, steak, shrimp, fillet and rabbits. All of them are alternatives, you can switch between them with the same grams." + '<br>' + "- 180 gm greek yogurt is alternative with 100 gm cottage cheese." + '<br>' + "- 100 gm smoked salmon are alternative with 100 gm smoked turkey." + '<br>' + "- 5 egg whites can be switched with 2 whole eggs. ";
+}
+else if (document.getElementById('select1').value == "4") {
+    document.getElementById("ri").innerHTML = "Nuts, avocado, flaxseeds, sesame, soymilk and soybeans";
+}
+else if (document.getElementById('select1').value == "5") {
+    document.getElementById("ri").innerHTML = "Red meat, seafood, peas, liver, spinach and dried fruits such as apricots, raisins, ";
+}
+else if (document.getElementById('select1').value == "6") {
+    document.getElementById("ri").innerHTML = "The most important thing is to be in caloric deficit, eat sufficient amount of proteins, minimize your quantities of carbohydrates, drink +3 liters of water and sleep from 7-9 hours.";
+}
+else if (document.getElementById('select1').value == "7") {
+    document.getElementById("ri").innerHTML = "- 1.4 to 2 gm of protein/kg of your total weight." + '<br>' + "- 0.4 to 0.5 gm of fats/kg of your total weight." + '<br>' + "- 2 to 4 gm of carbohydrates/kg of your total weight." + '<br>' + "<span class='fw-bolder text-danger'>Note:</span> these amounts to maintain your weight, if you want to lose weight minimize your amounts of carbohydrates per day as much as you can and vise versa. In both cases (losing or gaining weight), you must eat high amounts of proteins.";
+}
+}
+    </script>
+</body>
+</html>

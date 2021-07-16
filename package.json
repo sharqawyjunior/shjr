@@ -1,0 +1,15 @@
+{
+  "name": "shjr",
+  "version": "1.0.0",
+  "description": "A website for SHJR",
+  "main": "bootstrap.bundle.min.js",
+  "scripts": {
+    "compile:sass": "node-sass main.scss style.css"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

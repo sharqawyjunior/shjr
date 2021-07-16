@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <!--
+    <h1 class="display-4 box-shadow text text-white" >
+        "<span class="type-js headline "><span class="text-js ">Next stop acheive.</span>"
+    </h1>-->
+<div class="container-fluid">
+<div class="flex">
+
+<div class="column1">
+    <video src="video.mp4" type="mp4" class="video1" muted autoplay="" muted="" loop="" playsinline="" id="vid" preload="auto"></video>
+    <div class="column1__content">
+        <div class="column1__content-text justify-content-center d-flex align-items-center">
+<a href="packages.html" class="stretched-link text-decoration-none link-light">
+<h1 class="display-1 text-center fw-bolder box-shadow">
+DIET & <br> FITNESS <br> PLAN
+</h1>
+
+</a>
+        </div>
+    </div>
+</div>
+<div class="column2">
+
+    <div class="column2__content">
+        <div class="column2__content-text justify-content-center d-flex align-items-center">
+<a href="https://google.com" class="stretched-link text-decoration-none link-light">
+<h1 class="display-1 text-center fw-bolder box-shadow">
+   SH<svg xmlns="http://www.w3.org/2000/svg" width="70" height="60" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+      </svg>P
+      <br>
+      <span class="display-3">
+        COMING SOON ;)
+      </span>
+
+</h1>
+</a>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+
+    <script src="bootstrap.bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // DISCLAIMER: This function does require jQuery. I've used it here because the project I'm building this for already uses jQuery, so I thought why not. It can be modified quite simply to be done in raw JavaScript.  Just thought I'd let you know.
+
+        $(document).ready(function() {
+
+
+
+
+        $("#modal").click();
+
+
+     })
+
+
+// This is the funtion you need to copy
+// Copy from line 9 to 34
+
+function autoType(elementClass, typingSpeed){
+  var thhis = $(elementClass);
+  thhis.css({
+    "position": "relative",
+    "display": "inline-block"
+  });
+  thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+  thhis = thhis.find(".text-js");
+  var text = thhis.text().trim().split('');
+  var amntOfChars = text.length;
+  var newString = "";
+  thhis.text("|");
+  setTimeout(function(){
+    thhis.css("opacity",1);
+    thhis.prev().removeAttr("style");
+    thhis.text("");
+    for(var i = 0; i < amntOfChars; i++){
+      (function(i,char){
+        setTimeout(function() {
+          newString += char;
+          thhis.text(newString);
+        },i*typingSpeed);
+      })(i+1,text[i]);
+    }
+  },500);
+}
+
+$(document).ready(function(){
+  // Now to start autoTyping just call the autoType function with the
+  // class of outer div
+  // The second paramter is the speed between each letter is typed.
+  autoType(".type-js", 200);
+});
+    </script>
+</body>
+</html>
