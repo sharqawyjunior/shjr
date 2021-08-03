@@ -1,335 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navigation">
 
-.flex {
-  display: flex;
-  flex-direction: row;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%; }
+        <input type="checkbox" id="navi-toggle" class="navigation__checkbox fixed-top" >
 
-.column1, .column2 {
-  width: 50%;
-  height: 100vh;
-  position: relative; }
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">
 
-.column1__content, .column2__content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 99;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.171), rgba(0, 0, 0, 0.164)); }
+            </span>
+        </label>
 
-.column1__content-text, .column2__content-text {
-  height: 100vh; }
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
 
-.column2 {
-  background-image: url(IMG_0345.jpg);
-  background-size: cover;
-  background-position: center center; }
+                    <a href="#home" class="navigation__link" onclick="myFunction()"> <h1 class="display-4">Home  </h1></a>
+                </li>
 
-.column2 svg {
-  margin-top: -15px; }
+                <li class="navigation__item">
 
-.video1 {
-  -o-object-fit: cover;
-  object-fit: cover;
-  position: absolute;
-  height: 100vh;
-  width: 100%; }
+                    <a href="#about" class="navigation__link" onclick="myFunction()"> <h1 class="display-4">About Us</h1></a>
+                </li>
+                <li class="navigation__item">
 
-.box-shadow {
-  background-color: rgba(0, 0, 0, 0.322);
-  padding: 20px;
-  padding-right: 30px;
-  padding-left: 30px;
-  box-shadow: 0 5rem 4rem rgba(0, 0, 0, 0.651); }
+                    <a href="#recipes1" class="navigation__link" onclick="myFunction()"> <h1 class="display-4">Recipes</h1></a>
+                </li>
+                <li class="navigation__item">
 
-.text {
-  z-index: 100;
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+                    <a href="#success_stories" class="navigation__link" onclick="myFunction()"> <h1 class="display-4">Success stories   </h1></a>
+                </li>
 
-@media (max-width: 767.98px) {
-  .logo {
-    height: 150px;
-    width: 150px; }
-  .home {
-    height: 600px;
-    width: 100%;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(IMG_1075.jpg);
+
+                <li class="navigation__item">
+
+                    <a href="#packages" class="navigation__link" onclick="myFunction()"> <h1 class="display-4">Packages  </h1></a>
+                </li>
+
+
+                <li class="navigation__item">
+
+                    <a href="#qa" class="navigation__link" onclick="myFunction()"> <h1 class="display-4">Q&A  </h1></a>
+                </li>
+
+
+                <li class="navigation__item">
+
+                    <a href="#contact" class="navigation__link" onclick="myFunction()"> <h1 class="display-4">Contact Us  </h1></a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+    <section class="home" id="home">
+
+
+
+<img src="logoo.png" class="position-absolute top-0 start-0 logo img-fluid"  alt="">
+<!--
+<div class="container" style="height: 300px;">
+    <div class="row align-items-center ">
+        <div class="col-5 text-center">
+            <h1 class="display-6">
+"Next stop achieve."
+            </h1>
+        </div>
+    </div>
+</div>-->
+<div class="container" >
+    <div class="row align-items-center justify-content-between" style="height: 100vh;">
+        <div class="col-4 text-start">
+            <h1 class="display-1 text-white fw-bolder">
+"Next stop achieve."
+            </h1>
+        </div>
+        <div class="col-8">
+
+        </div>
+    </div>
+</div>
+<div class="container">
+
+
+<div class="row justify-content-center">
+
+
+<a href="#about" class="btn btn-light home-btn fs-5 " style="width: 160px;" >Click here...</a>
+</div></div>
+    </section>
+
+
+
+    <section id="about" class="my-5">
+
+<div class="container">
+    <h1 class="display-4 fw-bolder text-center mb-5">
+        About Us
+    </h1>
+<div class="row justify-content-evenly ">
+    <div class="col-xl-3 mb-3 py-4 px-4 shadow-lg bg-white text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-person-fill my-3" viewBox="0 0 16 16">
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg>
+          <h3 class="font-monospace ">Who's Sharqawy ?</h3>
+          <p class="lead ">
+            I'm Ahmed Sharqawy, former world &amp; arab champion and member in national swimming team. i started coaching to help people change their life. i took three certificates as a  personal trainer, Nutritionist and strength conditioning from ISSA.
+           </p>
+    </div>
+    <div class="col-xl-5  mb-3 text-center" >
+<img src="img2.JPG" style="height: 100%; width: 100%; margin: 0; " class="shadow-lg" alt="" >
+    </div>
+    <div class="col-xl-3 mb-3 py-4 px-4 shadow-lg bg-white text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-journal-check mb-4" style="margin-bottom: 3.4rem;" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"></path>
+            <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"></path>
+            <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"></path>
+          </svg>
+          <h3 class="font-monospace ">Our Aim</h3>
+          <p class="lead">
+            We are here to provide you with everything that will help you to change your life to the healthier </p>
+<p class="fw-bolder" style="font-size: 20px;">We offer : </p>
+<ul class="text-center   " style="margin-top: -20px;">
+    <li>
+      Customized nutrition and training program based on your personal goals.
+    </li>
+    <li>
+     The best variety of nutrition plans.
+    </li>
+    <li>
+      Exercises that are linked with video tutorials to show you the correct technique in a simple way
+    </li>
+
+  </ul>
+    </div>
+</div>
+</div>
+</section>
+
+<section id="recipes1" class="border-top border-3 border-dark pt-5"  >
+    <h1 class="display-4 fw-bolder text-center">
+        Recipes
+    </h1>
+    <div class="container "style="     background-image: url(https://media.gq-magazine.co.uk/photos/6051e056b72c6dcbd4f9b7fe/master/w_1920,h_1280,c_limit/Meal%20delivery_0001_Nutrition%20kitchen.jpg);
     background-size: cover;
-    background-position: center center; }
-    .row {
-      height: 600px;
-    }
-  .home .row .col-4 {
-    margin-top: -200px; }
-  .home .row .col-5 {
-    display: none;
-    height: 4px; }
-  .flex {
-    flex-direction: column; }
-  .column1, .column2 {
-    width: 100%;
-    height: 50vh; }
-  .column1__content, .column2__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50vh;
-    z-index: 99;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.171), rgba(0, 0, 0, 0.164)); }
-  .column1__content-text, .column2__content-text {
-    height: 50vh; }
-  .text {
-    text-align: center;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-  .video1 {
-    height: 50vh;
-    width: 100%; } }
+    background-position: center center;">
+        <div class="container border-bottom border-3 border-dark my-5 pt-5">
+            <div class="row justify-content-center text-center align-items-center vh-100">
+                <div class="col-md-12">
 
-.navigation__button {
-  background-color: white;
-  height: 4.5rem;
-  width: 4.5rem;
-  position: fixed;
-  top: 2rem;
-  right: 1.5rem;
-  z-index: 100;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
-  z-index: 3000;
-  border-radius: 50%;
-  text-align: center; }
-
-.navigation__background {
-  height: 1rem;
-  width: 1rem;
-  border-radius: 50%;
-  position: fixed;
-  z-index: 1000;
-  top: 3.25rem;
-  right: 3.25rem;
-  background-color: black;
-  transition: all 1s; }
-
-.navigation__nav {
-  min-height: 100vh;
-  background-color: black;
-  position: fixed;
-  overflow: auto;
-  top: 0;
-  left: 0;
-  z-index: 2000;
-  opacity: 0;
-  width: 0;
-  visibility: hidden;
-  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-
-.navigation__list {
-  transition: all 1s;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  list-style: none;
-  text-align: center;
-  width: 100%; }
-
-.navigation__item {
-  text-align: center;
-  transition: all 1s; }
-
-.navigation__link:link, .navigation__link:visited {
-  display: inline-block;
-  font-weight: 300;
-  color: white;
-  padding: .5rem 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
-  background-size: 220%;
-  transition: all .4s; }
-
-.navigation__link:link span, .navigation__link:visited span {
-  margin-right: 1rem;
-  display: inline-block;
-  font-weight: 300;
-  color: white;
-  padding: .5rem 1rem; }
-
-.navigation__link:hover, .navigation__link:active {
-  transform: translateX(0.2rem);
-  background-position: 100%;
-  color: black; }
-
-.navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(200); }
-
-.navigation__checkbox:checked ~ .navigation__nav {
-  opacity: 1;
-  width: 100%;
-  visibility: visible; }
-
-.navigation__icon {
-  position: relative;
-  top: 1.1rem; }
-
-.navigation__icon, .navigation__icon::before, .navigation__icon::after {
-  width: 2rem;
-  height: 2px;
-  background-color: #000;
-  display: inline-block; }
-
-.navigation__icon::after, .navigation__icon::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  transition: all .3s; }
-
-.navigation__icon::before {
-  top: -.6rem; }
-
-.navigation__icon::after {
-  top: .6rem; }
-
-.navigation__button:hover .navigation__icon::before {
-  top: -.8rem;
-  transition: all .3s; }
-
-.navigation__button:hover .navigation__icon::after {
-  top: .8rem;
-  transition: all .3s; }
-
-.navigation__checkbox:checked ~ .navigation__button .navigation__icon {
-  background-color: transparent; }
-
-.navigation__checkbox:checked ~ .navigation__button .navigation__icon::before {
-  transform: rotate(-45deg);
-  top: 0rem; }
-
-.navigation__checkbox:checked ~ .navigation__button .navigation__icon::after {
-  transform: rotate(45deg);
-  top: 0rem; }
-
-.navigation__checkbox {
-  visibility: hidden; }
-
-@media (min-width: 768px) and (max-width: 899.98px) {
-  .home .row .col-5 {
-    position: absolute;
-    top: 200px;
-    left: -20px; } }
-
-@media (min-width: 900px) {
-  .home .row .col-5 {
-    left: 1%; } }
-
-@media (min-width: 1000px) {
-  .home .row .col-5 {
-    left: 4%; } }
-
-@media (min-width: 1100px) {
-  .home .row .col-5 {
-    left: 4.5%; } }
-
-@media (min-width: 768px) {
-  .logo {
-    height: 200px;
-    width: 200px; }
-  .home {
-    height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(IMG_1075.jpg);
-    background-size: cover;
-    background-position: center center; }
-  .home .row .col-5 {
-    position: absolute;
-    top: 200px; }
-  .navigation__button {
-    background-color: white;
-    height: 6rem;
-    width: 6rem;
-    position: fixed;
-    top: 3rem;
-    right: 1.5rem;
-    z-index: 100;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
-    z-index: 3000;
-    border-radius: 50%;
-    text-align: center; }
-  .navigation__background {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-    position: fixed;
-    z-index: 1000;
-    top: 4.25rem;
-    right: 3.25rem;
-    background-color: black;
-    transition: all 1s; }
-  .navigation__icon {
-    position: relative;
-    top: 1.8rem; }
-  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
-    width: 3rem;
-    height: 2px;
-    background-color: #000;
-    display: inline-block; }
-  .navigation__icon::after, .navigation__icon::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    transition: all .3s; }
-  .navigation__icon::before {
-    top: -1rem; }
-  .navigation__icon::after {
-    top: 1rem; }
-  .navigation__button:hover .navigation__icon::before {
-    top: -1.5rem;
-    transition: all .3s; }
-  .navigation__button:hover .navigation__icon::after {
-    top: 1.5rem;
-    transition: all .3s; } }
-
-.home {
-  position: relative; }
-
-.home-btn {
-  position: absolute;
-  top: 85%;
-  transform: translateY(-50%);
-  animation: moveloop 3s ease alternate infinite;
-  -webkit-animation: moveloop 3s ease alternate infinite; }
-
-@keyframes moveloop {
-  0% {
-    transform: translateY(0px) translateX(0px); }
-  25% {
-    transform: translateY(-10px) translateX(0px); }
-  50% {
-    transform: translateY(10px) translateX(0px); }
-  75% {
-    transform: translateY(-10px) translateX(0px); }
-  100% {
-    transform: translateY(10px) translateX(0px); } }
-
-@-webkit-keyframes moveloop {
-  0% {
-    transform: translateY(0px) translateX(0px); }
-  25% {
-    transform: translateY(-10px) translateX(0px); }
-  50% {
-    transform: translateY(10px) translateX(0px); }
-  75% {
-    transform: translateY(-10px) translateX(0px); }
-  100% {
-    transform: translateY(10px) translateX(0px); } }
+                    <br>
+                    <h1 class="display-1 fw-bolder mb-2 text-white">
+                        COMING SOON ;)
+                    </h1>
+                </div>
+            </div>
 
 
+        </div>
+    </div>
+</section>
+
+<section class="themes bg-light pt-5 pb-5" id="success_stories">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="display-4 fw-bolder text-center mb-5">
+                    Success stories
+                </h1>
+                <div class="w-100 mt-4"></div>
+                <p class="lead text-muted mt-2">
+                  We will show you some of our success stories!!
+                </p>
+            </div>
+        </div>
+
+            <div class="row mt-5">
+
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+  <div class="row mb-5">
+
+
+
+
+  </div>
+  <div class="row mb-5 justify-content-center">
+    <div class="col-lg-4 col-md-6 col-sm-12 col-12 ">
+        <div class="card border-0 bg-transparent text-center">
+            <img src="i2.jpeg" class="card-img-top" alt="...">
+
+          </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 col-12 ">
+        <div class="card border-0 bg-transparent text-center">
+            <img src="i4.jpeg" class="card-img-top" alt="...">
+
+          </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 col-12 ">
+        <div class="card border-0 bg-transparent text-center">
+            <img src="i3.jpeg" class="card-img-top" alt="...">
+
+          </div>
+    </div>
+  </div>
+                    </div>
+
+                        <div class="row mb-5 justify-content-center text-start">
+                            <div class="col-lg-4 col-md-6 col-sm-12 col-12  ">
+                                <div class="card border-0 bg-transparent text-center">
+                                    <img src="i1.jpeg" class="card-img-top" alt="..." id="card_img">
+
+                                  </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 col-md-6 col-12">
+                                <div class="card border-0 bg-transparent text-center">
+                                    <img src="i6.jpeg" class="card-img-top" alt="..." id="card_img">
+
+                                  </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 col-md-6 col-12" id="card_img">
+                                <div class="card border-0 bg-transparent text-center">
+                                    <img src="i7.jpeg" class="card-img-top" alt="...">
+
+                                  </div>
+                            </div>
+
+
+
+
+
+
+
+
+                            <div class="col-lg-4 col-sm-12 col-md-6 col-12" id="card_img">
+                                <div class="card border-0 bg-transparent text-center">
+                                    <img src="i8.jpg" class="card-img-top" alt="...">
+
+                                  </div>
+                            </div>
+
+
+
+                            <div class="col-lg-4 col-sm-12 col-md-6 col-12" id="card_img">
+                                <div class="card border-0 bg-transparent text-center">
+                                    <img src="i9.jpg" class="card-img-top" alt="...">
+
+                                  </div>
+                            </div>
+
+
+                            <div class="col-lg-4 col-sm-12 col-md-6 col-12" id="card_img">
+                                <div class="card border-0 bg-transparent text-center">
+                                    <img src="i7.jpeg" class="card-img-top" alt="...">
+
+                                  </div>
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+
+                  </div>
+                </div>
+
+        </div>
+
+  </section>
+  <section id="packages" class="my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="display-4 fw-bolder text-center mb-5">
+                    Packages
+                </h1>
+                <div class="w-100 mt-4"></div>
+                <p class="lead text-muted mt-2">
+                    We provide you 3 online packages and one offline, you can choose the one that fits you.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-4 justify-content-evenly">
+            <div class="col-md-5 col-11 py-4 px-4 shadow-lg bg-white text-center">
+                <div class="card-body " id="card_detail">
+                    <div class="text-center">
+
+
+                        <img src="https://static.thenounproject.com/png/2130454-200.png" class="img-fluid text-center" style="max-height: 60px;" alt="" srcset="">
+
+
+                      </div>
+             <h1 class="card-title display-6">Nutrition program:</h1>
+                    <p class="card-text ">
+                    <ul class="lead text-start">
+<li>
+    We provide you 2 nutrition plans per month each one duration is 14 days with a free meal/day between them, each nutrition plan contain 3 different plans to give you flexibilty and variety between food.
+</li>
+<li>
+    We suggest supplements if required.
+</li>
+<li>
+    We take care if you have any chronic disease or any vitamine diffency.
+</li>
+<li>
+We also provide nutrition plans for diabetic people.
+</li>
+                    </ul>
+                </p>
+
+          </div>
+
+
+
+
+          <p class="lead  d-block w-100 fw-bolder text-center mt-5 align-self-center">
+            <a href="mailto: sharqawyjunior@gmail.com" class="btn justify-content-center btn-dark btn-lg">$22</a>
+          </p>
+            </div>
+
+
+
+
+
+
+            <div class="col-md-5 col-11 mt-4 py-4 px-4 shadow-lg bg-white text-center">
+                <div class="card-body">
+                    <div class="text-center">
+
+
+                        <img src="https://image.flaticon.com/icons/png/512/38/38464.png" class="img-fluid text-center" style="max-height: 55px;" alt="" srcset="">
+                        </div>
+                        <h1 class="card-title display-6">Workout program:</h1>
+                        <p class="card-text ">
+                            <ul class="lead text-start">
+        <li>
+            We provide you 100% customized Training program all over the month according to your goal either gym or home workout.
+        </li>
+        <li>
+            Each exercise is followed with a video to show you an easy and proper technique.
+        </li>
+        <li>
+            Also we provide you flexibilty and mobility routines with your workout.
+        </li>
+        <li>
+            We suggest supplements if required.
+        </li>
+                            </ul>
+                        </p>
+
+
+
+
+
+
+
+                  </div>
+                  <p class="lead  d-block w-100 fw-bolder text-center  align-self-center" style="margin-top: 110px;">
+                    <a href="mailto: sharqawyjunior@gmail.com" class="btn justify-content-center btn-dark btn-lg">$32</a>
+                  </p>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="col-md-5 col-11 mt-4 py-4 px-4 shadow-lg bg-white text-center">
+                <div class="card-body">
+                    <div class="text-center">
+
+
+                        <img src="https://static.thenounproject.com/png/499479-200.png" class="img-fluid text-center" style="max-height: 70px;" alt="" srcset="">
+                        </div>
+                        <h1 class="card-title display-6">Full Pacakge: (N+W)
+                        </h1>
+                        <p class="card-text ">
+                            <ul class="lead text-start">
+        <li>
+            2 different nutrition plans 100% customized, each contains 3 different plans for variety, all of them are equal in calories and macronutrients.
+        </li>
+        <li>
+            Workout plan (Home/gym workout): <br> <span class="" style="font-weight: 500;">(Hypertrophy -Strength -Weight loss / Weight gain -performance training)</span>
+        </li>
+        <li>
+            Felixibilty/Mobility routine
+        </li>
+        <li>
+            Supplement guide (If required)
+        </li>
+        <li>
+            24/7 customer service via whatsapp for any questions & inquries.
+        </li>
+                            </ul>
+                        </p>
+
+
+
+
+
+
+
+                  </div>
+                  <p class="lead  d-block w-100 fw-bolder text-center  align-self-center" style="margin-top: 110px;">
+                    <a href="mailto: sharqawyjunior@gmail.com" class="btn justify-content-center btn-dark btn-lg">$52</a>
+                  </p>
+            </div>
+
+
+
+
+
+
+            <div class="col-md-5 col-11 mt-4 py-4 px-4 shadow-lg bg-white text-center">
+                <div class="card-body">
+                    <div class="text-center">
+
+
+                        <img src="https://www.lakehousetheclub.com/wp-content/uploads/2018/08/res-Ignite-LOGO.png" class="img-fluid text-center" style="max-height: 55px;" alt="" srcset="">
+                        </div>
+                        <h1 class="card-title display-6">IGNITE Packages:
+                        </h1>
+
+                        <p class="card-text lead">
+                           If you want an offline package whatever you are an athlete who is aiming for a better performance, obese who wants to lose weight or thin and your goal is to gain weight. you can join my team at ignite gym to take you to a better version of you. send your emails to join me now!!
+                        </p>
+<br><br><br>
+
+<p class="text-start lead mb-4">
+  - <span class="fw-bolder  fs-5">12 Sessions</span><span> <a href="mailto: sharqawyjunior@gmail.com" class="btn ms-5 justify-content-center btn-dark btn-lg">$191</a> </span>
+</p>
+<p class="text-start lead mb-4">
+  - <span class="fw-bolder fs-5">24 Sessions</span><span> <a href="mailto: sharqawyjunior@gmail.com" class="btn ms-5 justify-content-center btn-dark btn-lg">$306</a> </span>
+</p>
+
+
+
+
+
+
+                  </div>
+                  <p class="lead  d-block w-100 fw-bolder text-center  align-self-center" style="margin-top: 110px;">
+
+                  </p>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+        </div>
+  </section>
+
+  <div class="container border-bottom border-3 border-dark" id="qa">
+    <div class="row justify-content-center text-center">
+        <div class="col-md-4">
+
+            <br>
+            <h1 class="display-1 fw-bolder mb-2">
+                Q&A
+            </h1>
+        </div>
+    </div>
+
+
+</div>
+<div class="container my-5">
+<div class="row pb-5 mb-5">
+    <div class="col-md-12">
+        <h1>Nutrition questions?</h1>
+        <select class="form-select fw-bolder" aria-label="Default select example" id="select1">
+            <option value="1">Open this select menu</option>
+            <option value="2">Can i drink coffe, latte or cappuccino?</option>
+            <option value="3">What are the types of protein that are alternative to each other?</option>
+            <option value="4">What are the types of healthy fats?</option>
+            <option value="5">What are the types of food that help in treatment of iron deficiency?</option>
+            <option value="6">What is the most important thing to do for weight loss?</option>
+            <option value="7">How many macros do you need everyday?</option>
+          </select>
+          <p class="lead mt-3" id="ri">
+
+        </p>
+          <button onclick="nutrition()" class="btn btn-dark w-100 mt-3">Submit</button>
+    </div>
+
+
+
+</div>
+</div>
+
+
+
+
+  <div class="contact  py-5" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+        <h1 class="display-6 fw-bold font-monospace">
+            Contact Us
+        </h1>
+
+        </div>
+    </div>
+    <div class="row  justify-content-center">
+<div class="card border-0 bg-white  shadow-lg  card2 gradient-border p-5 my-3">
+<div class="lead fs-3">
+
+
+      <div class="col text-center lead fs-3" id="contact2"><span>If you want to join ourr team, Kindly send an email to this email address mentioned below containing :
+        <br>
+      <ul class="list-unstyled">
+        <li>Full Name</li>
+        <li>Chosen Packages</li>
+        <li>Whatsapp Number </li>
+
+      </ul> </span><h1><a href="mailto:sharqawyjunior@gmail.com " class="btn bg-dark btn-lg shadow-lg btn-dark" id="btn-header">sharqawyjunior @gmail.com</a></h1></div>
+   </div> </div></div></div>
+</div>
+
+
+
+
+
+<footer class="pt-4 mt-5 d-flex pb-4 p-4 bg-dark text-white">
+    <div class="container-fluid">
+        <div class="row mb-5 justify-content-center">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <h1 class="display-6 fw-bolder">
+                    Sharqawy Junior
+                </h1>
+                <ul class="list-unstyled">
+
+                    <li class="align-self-center">
+                      <a href="https://instagram.com/sharqawyjr?igshid=1m42bymfuqsnahttps://instagram.com/sharqawyjr?igshid=1m42bymfuqsna" class="img-fluid fs-5 link-light text-decoration-none">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/769px-Instagram-Icon.png" height="40px" alt="" srcset=""> <span class="ms-3">@sharqawyjr</span>
+                      </a>
+                    </li>
+                    <li class="align-self-center mt-2">
+                      <a href="https://youtube.com/channel/UCtO0UuDx4DesNV8aMblaudQ" class="img-fluid fs-5 link-light text-decoration-none">
+                        <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/youtube-512.png" height="40px" alt="" srcset=""> <span class="ms-3">Sharqawy Junior</span>
+                      </a>
+                    </li>
+                    <li class="align-self-center mt-2">
+                      <a href="mailto: sharqawyjunior@gmail.com" class="img-fluid fs-5 link-light text-decoration-none">
+                        <img src="    https://cdn4.iconfinder.com/data/icons/free-colorful-icons/360/gmail.png" height="40px" alt="" srcset=""> <span class="ms-3">sharqawyjunior@gmail.com</span>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <h1 class="fs-5 fw-bolder">
+                    Quick links
+                </h1>
+                <ul class="list-unstyled">
+                    <li>
+                      <a href="#home" class="link-light text-decoration-none ">Home </a>
+                    </li>
+                    <li>
+                      <a href="#about" class="link-light text-decoration-none ">About Us </a>
+                    </li>
+                    <li>
+                      <a href="#success_stories" class="link-light text-decoration-none ">Success stories </a>
+                    </li>
+                    <li>
+                      <a href="#packages" class="link-light text-decoration-none ">Packages </a>
+                    </li>
+                    <li>
+                      <a href="#contact" class="link-light text-decoration-none ">Contact Us </a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col mb-3">
+
+
+
+
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+    <p class="text-muted">© Yossef Ayman Zedan 2021</p>
+
+            </div>
+        </div>
+    </div>
+    </footer>
+    <script>
+        function myFunction() {
+  document.querySelector(".navigation__checkbox").click();
+}
+function nutrition() {
+
+
+if (document.getElementById('select1').value == "1") {
+    document.getElementById("ri").innerHTML = "Please select a question!";
+}
+else if (document.getElementById('select1').value == "2") {
+    document.getElementById("ri").innerHTML = "Yes, but switch full creamed milk with skimmed milk or almond milk. Also, switch white sugar with fructose or sweetner.";
+}
+else if (document.getElementById('select1').value == "3") {
+    document.getElementById("ri").innerHTML = "- Liver, chicken breasts, steak, shrimp, fillet and rabbits. All of them are alternatives, you can switch between them with the same grams." + '<br>' + "- 180 gm greek yogurt is alternative with 100 gm cottage cheese." + '<br>' + "- 100 gm smoked salmon are alternative with 100 gm smoked turkey." + '<br>' + "- 5 egg whites can be switched with 2 whole eggs. ";
+}
+else if (document.getElementById('select1').value == "4") {
+    document.getElementById("ri").innerHTML = "Nuts, avocado, flaxseeds, sesame, soymilk and soybeans";
+}
+else if (document.getElementById('select1').value == "5") {
+    document.getElementById("ri").innerHTML = "Red meat, seafood, peas, liver, spinach and dried fruits such as apricots, raisins, ";
+}
+else if (document.getElementById('select1').value == "6") {
+    document.getElementById("ri").innerHTML = "The most important thing is to be in caloric deficit, eat sufficient amount of proteins, minimize your quantities of carbohydrates, drink +3 liters of water and sleep from 7-9 hours.";
+}
+else if (document.getElementById('select1').value == "7") {
+    document.getElementById("ri").innerHTML = "- 1.4 to 2 gm of protein/kg of your total weight." + '<br>' + "- 0.4 to 0.5 gm of fats/kg of your total weight." + '<br>' + "- 2 to 4 gm of carbohydrates/kg of your total weight." + '<br>' + "<span class='fw-bolder text-danger'>Note:</span> these amounts to maintain your weight, if you want to lose weight minimize your amounts of carbohydrates per day as much as you can and vise versa. In both cases (losing or gaining weight), you must eat high amounts of proteins.";
+}
+}
+        function myFunction() {
+  document.querySelector(".navigation__checkbox").click();
+}
+    </script>
+</body>
+</html>
