@@ -333,10 +333,3 @@
     transform: translateY(10px) translateX(0px); } }
 
 
-  .offer {
-      position: absolute;
-      height: 100px;
-  top: -30px;
-  left: -30px;
-  }
-
