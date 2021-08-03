@@ -63,6 +63,9 @@
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(IMG_1075.jpg);
     background-size: cover;
     background-position: center center; }
+    .row {
+      height: 600px;
+    }
   .home .row .col-4 {
     margin-top: -200px; }
   .home .row .col-5 {
@@ -328,3 +331,12 @@
     transform: translateY(-10px) translateX(0px); }
   100% {
     transform: translateY(10px) translateX(0px); } }
+
+
+  .offer {
+      position: absolute;
+      height: 100px;
+  top: -30px;
+  left: -30px;
+  }
+
