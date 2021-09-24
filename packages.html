@@ -9,31 +9,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <button type="button" class="btn btn-primary d-none" id="modal2" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Launch demo modal
       </button>
 
       <!-- Modal -->
-      <div class="modal fade modal-dialog-centered "  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title text-uppercase" id="exampleModalLabel">Hurry up!!</h5>
+      <div class="modal fade bg-transparent modal-dialog-centered "  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog bg-transparent modal-dialog-centered modal-sm">
+          <div class="modal-content bg-transparent border-0">
+
+            <div class="modal-body">
+
+<div class="container-count py-5 d-flex justify-content-between flex-column">
+    <div class="display-3 fw-bolder"> <h5 class="modal-title text-uppercase" id="exampleModalLabel">Hurry up!!</h5> 50% Off <br> <span class="display-6">on any online package</span>
+
+
+    </div>
+    <div id="countdown">
+      <ul>
+        <li class="li"><span id="days"></span>days</li>
+        <li class="li"><span id="hours"></span>Hours</li>
+        <li class="li"><span id="minutes"></span>Minutes</li>
+        <li class="li"><span id="seconds"></span>Seconds</li>
+      </ul>
+      <div class="text-end">
+        <button class="btn btn-secondary" id="close__modal" data-bs-dismiss="modal">Close</button>
+        <!--
+        <button id="close_one" class="d-none" onclick="window.location.href='#packages'" data-bs-dismiss="modal"></button>
+-->
+        <a class="btn btn-ghost text-center ml-4 btn-modal" style="background-color: red; color: white;"  id="btn-modal"  href="#sale">Read more</a>
+      </div>
+    </div>
+    <div id="content" class="emoji">
+      <span>🥳</span>
+      <span>🎉</span>
+      <span>🎂</span>
+    </div>
+  </div>
 
             </div>
-            <div class="modal-body lead">
-             Full package 25% off: <span style="font-weight: 800;">From $52 to $38</span> <br>
-             Workout program 20% off: <span style="font-weight: 800;">From $32 to $25</span> <br>
-             Nutrition program 15% off: <span style="font-weight: 800;">From $22 to $19</span> <br>
 
-            </div>
 
-            <div class="modal-footer">
-              <button class="btn btn-secondary" id="close__modal" data-bs-dismiss="modal">Close</button>
-              <button id="close_one" class="d-none" onclick="window.location.href='#packages'" data-bs-dismiss="modal"></button>
-
-              <a class="btn btn-ghost text-center ml-4 btn-modal" style="background-color: red; color: white;"  id="btn-modal"  href="#sale">Read more</a>
-            </div>
           </div>
         </div>
       </div>
@@ -105,15 +122,13 @@
     </div>
 </div>-->
 <div class="container" >
-    <div class="row align-items-center justify-content-between" style="height: 100vh;">
-        <div class="col-4 text-start">
-            <h1 class="display-1 text-white fw-bolder">
-"Next stop achieve."
+    <div class="row align-items-center justify-content-center" style="height: 100vh;">
+        <div class="col text-center">
+            <h1 class="display-1 text-white fw-bolder text-uppercase">
+"Next step, achieve!"
             </h1>
         </div>
-        <div class="col-8">
 
-        </div>
     </div>
 </div>
 <div class="container">
@@ -178,7 +193,7 @@
     <h1 class="display-4 fw-bolder text-center">
         Recipes
     </h1>
-    <div class="container "style="     background-image: url(https://media.gq-magazine.co.uk/photos/6051e056b72c6dcbd4f9b7fe/master/w_1920,h_1280,c_limit/Meal%20delivery_0001_Nutrition%20kitchen.jpg);
+    <div class="container position-relative" style="     background-image: url(https://media.gq-magazine.co.uk/photos/6051e056b72c6dcbd4f9b7fe/master/w_1920,h_1280,c_limit/Meal%20delivery_0001_Nutrition%20kitchen.jpg);
     background-size: cover;
     background-position: center center;">
         <div class="container border-bottom border-3 border-dark my-5 pt-5">
@@ -186,9 +201,11 @@
                 <div class="col-md-12">
 
                     <br>
-                    <h1 class="display-1 fw-bolder mb-2 text-white">
-                        COMING SOON ;)
-                    </h1>
+                    <a href="recipes.html" target="_blank" id="btn1" class="btn btn-link text-white fw-bolder px-5 py-2 rounded-0 stretched-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="white" class="bi bi-arrow-right-square-fill " viewBox="0 0 16 16">
+                            <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
+                          </svg>
+                    </a>
                 </div>
             </div>
 
@@ -357,7 +374,7 @@ We also provide nutrition plans for diabetic people.
           <p class="lead  d-block w-100 fw-bolder text-center mt-5 align-self-center">
 
             <a href="https://forms.gle/F5EbX5yVDgwMqgZ2A" target="_blank" class="btn bg-dark mt-3 btn-lg shadow-lg btn-dark" id="btn-header"><img src="Google_-G-_Logo.svg_.png" class="img-fluid me-2" height="24px" width="24px" alt=""><span style='color:red;text-decoration:line-through' > <span style="color: white;">$22 </span></span> </a>
-            <a href="https://forms.gle/F5EbX5yVDgwMqgZ2A" target="_blank" class="btn bg-dark mt-3 btn-lg shadow-lg btn-dark" id="btn-header"><img src="Google_-G-_Logo.svg_.png" class="img-fluid me-2" height="24px" width="24px" alt="">$19 </a>
+            <a href="https://forms.gle/F5EbX5yVDgwMqgZ2A" target="_blank" class="btn bg-dark mt-3 btn-lg shadow-lg btn-dark" id="btn-header"><img src="Google_-G-_Logo.svg_.png" class="img-fluid me-2" height="24px" width="24px" alt="">$11 </a>
           </p>
 
             </div>
@@ -401,7 +418,7 @@ We also provide nutrition plans for diabetic people.
                   </div>
                   <p class="lead  d-block w-100 fw-bolder text-center  align-self-center" >
                     <a href="https://forms.gle/F5EbX5yVDgwMqgZ2A" target="_blank" class="btn bg-dark mt-3 btn-lg shadow-lg btn-dark" id="btn-header"><img src="Google_-G-_Logo.svg_.png" class="img-fluid me-2" height="24px" width="24px" alt=""><span style='color:red;text-decoration:line-through' > <span style="color: white;">$32 </span></span> </a>
-                    <a href="https://forms.gle/F5EbX5yVDgwMqgZ2A" target="_blank" class="btn bg-dark mt-3 btn-lg shadow-lg btn-dark" id="btn-header"><img src="Google_-G-_Logo.svg_.png" class="img-fluid me-2" height="24px" width="24px" alt="">$25 </a>
+                    <a href="https://forms.gle/F5EbX5yVDgwMqgZ2A" target="_blank" class="btn bg-dark mt-3 btn-lg shadow-lg btn-dark" id="btn-header"><img src="Google_-G-_Logo.svg_.png" class="img-fluid me-2" height="24px" width="24px" alt="">$16 </a>
                   </p>
 
             </div>
@@ -452,7 +469,7 @@ We also provide nutrition plans for diabetic people.
 
                   <p class="lead  d-block w-100 fw-bolder text-center mt-auto align-self-center">
                     <a href="https://forms.gle/F5EbX5yVDgwMqgZ2A" target="_blank" class="btn bg-dark mt-3 btn-lg shadow-lg btn-dark" id="btn-header"><img src="Google_-G-_Logo.svg_.png" class="img-fluid me-2" height="24px" width="24px" alt=""><span style='color:red;text-decoration:line-through' > <span style="color: white;">$52 </span></span> </a>
-                    <a href="https://forms.gle/F5EbX5yVDgwMqgZ2A" target="_blank" class="btn bg-dark mt-3 btn-lg shadow-lg btn-dark" id="btn-header"><img src="Google_-G-_Logo.svg_.png" class="img-fluid me-2" height="24px" width="24px" alt="">$38 </a>
+                    <a href="https://forms.gle/F5EbX5yVDgwMqgZ2A" target="_blank" class="btn bg-dark mt-3 btn-lg shadow-lg btn-dark" id="btn-header"><img src="Google_-G-_Logo.svg_.png" class="img-fluid me-2" height="24px" width="24px" alt="">$26 </a>
 
                   </p>
             </div>
@@ -689,6 +706,39 @@ else if (document.getElementById('select1').value == "7") {
         function myFunction() {
   document.querySelector(".navigation__checkbox").click();
 }
+(function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  let birthday = "Sep 26, 2021 18:00:00",
+      countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {
+
+        let now = new Date().getTime(),
+            distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        //do something later when date is reached
+        if (distance < 0) {
+          let headline = document.getElementById("headline"),
+              countdown = document.getElementById("countdown"),
+              content = document.getElementById("content");
+
+          headline.innerText = "Offer is over!";
+          countdown.style.display = "none";
+          content.style.display = "block";
+
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
     </script>
 </body>
 </html>
