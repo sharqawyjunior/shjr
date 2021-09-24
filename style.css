@@ -3,6 +3,7 @@
   margin: 0 auto;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   background-color: #ffd54f; }
 
@@ -20,15 +21,16 @@
   font-size: 4.5rem; }
 @media only screen and (max-width: 500px) {
   .li {
-    display: inline-block;
+    width: 40%;
 
-    list-style-type: none;
-    padding: .5em;
-    text-transform: uppercase; }
+  list-style-type: none;
+  padding: 1em;
+  padding-left: 0;
+  text-transform: uppercase; }
 
-  .li span {
-    display: block;
-    font-size: 2.5rem; }
+.li span {
+  display: block;
+  font-size: 1.5rem; }
 }
 .emoji {
   display: none;
